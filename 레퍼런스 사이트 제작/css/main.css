@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+
+
+/* layout */
+body{
+    font-family: 'NanumSquare',sans-serif, !important;
+    font-size: 14px; color: #4e4e4e; line-height: 1.4;
+}
+/* header */
+header{width: 100%; height: 120px; line-height: 120px; padding: 0 60px;
+       box-sizing: border-box;
+       position: fixed;
+       top: 0;
+       z-index: 100; 
+}
+header.on{background-color: #fff;}
+header .logo{
+    display: block;
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: -6px;
+    color: #39312b;
+    float: left;
+}
+header nav{float: right;}
+header nav .gnb{}
+header nav .gnb li{display: inline-block; margin-left: 60px;}
+header nav .gnb li a{display: block; font-size: 18px; text-transform: uppercase;
+                    position: relative;}
+header nav .gnb li a:after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    background-color: #888;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);   /*공식임! 가운데로 올 수 있게*/
+    transition: all 0.5s;
+}
+header nav .gnb li a:hover:after,header nav .gnb li a:focus:after{
+    width: 100%;    /*효과 주기 호버 시*/
+}
+/* visual */
+section.visual{
+    margin-top: 120px; padding-bottom: 50px; position: relative;
+}
+section.visual::before{
+    content: ''; 
+    width: 50%;
+    height: 400px;
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    background-color: #f0f0f0;
+
+} 
+section.visual .img{width: 95%; text-align: center; position: relative;}
+section.visual .img .imgBox{display: block; width: 100%; height: 100%; overflow: hidden;}
+
+/* 슬라이드 페이지 숫자 이미지 */
+section.visual .img .page{position: absolute; right: -43px; top: 50%; transform: translateY(-50%);}
+section.visual .img img{width: 100%;}
+
+/* 이미지 위의 타이틀 */
+section.visual .title{position: absolute; top: 40%; left: 8%; color: #fff;}
+section.visual .title h2{font-size: 50px; margin-bottom: 30px;}
+section.visual .title p{font-size: 20px; font-weight: 300;}
+section.visual .menu{position: absolute; bottom: 15%; left: 8%;}
+section.visual .menu li{float: left; margin-right: 60px;}
+section.visual .menu li a{display: block; color: #fff;}
+section.visual .menu li a p{float: left; font-weight: bold; font-size: 20px; line-height: 1.6;}
+section.visual .menu li a p span{display: block; font-weight: 100; font-size: 15px; color: #fff;}
+section.visual .menu li a .arrow{display: block; float: right; margin-top: 10px; margin-left: 20px; position: relative; z-index: 1;}    
+section.visual .menu li a .arrow:before{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-color: rgba(252, 252, 252, 0.4);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: -1;
+    transition: all 0.2s;
+}
+section.visual .menu li a:hover .arrow:before,
+section.visual .menu li a:focus .arrow:before{
+    top: 0;
+    right: 0;
+}
+
+/*  */
+section.visual .img .mask{display: block; position: absolute; top: 0; width: 1px; height: 100%; background-color: rgba(252, 252, 252, 0.16);}
+section.visual .img .mask.a{left: 0%;}
+section.visual .img .mask.b{left: 25%;}
+section.visual .img .mask.c{left: 50%;}
+section.visual .img .mask.d{left: 75%;}
+
+
+/* 애니메이션 */
+@keyframes mask {
+    0%{width: 25%; background: #000;}
+    50%{width: 25%; background: #000;}
+    99% {background: #000;}
+}
+section.visual .slick-active .img .mask.a {animation-name: mask; animation-duration: 0.4s; }
+section.visual .slick-active .img .mask.b {animation-name: mask; animation-duration: 0.6s; }
+section.visual .slick-active .img .mask.c {animation-name: mask; animation-duration: 0.8s; }
+section.visual .slick-active .img .mask.d {animation-name: mask; animation-duration: 1s; }
+
+
+@keyframes slid-up {
+    0%{opacity: 0;}
+   40%{opacity: 0; transform: translateY(40px);}
+}
+
+
+section.visual .slick-active .title h2{animation-name:slid-up; animation-duration: 1.5s; }
+section.visual .slick-active .title p {animation-name:slid-up; animation-duration: 2.2s;}
+section.visual .menu {animation-name:slid-up; animation-duration: 2.8s;}
+section.visual .slick-active .imgBox img {transform: scale(1); animation-name: scaleani; animation-duration: 5.2s;}
+
+
+@keyframes scaleani {
+    0%{transform: scale(1.3);}
+   30%{transform: scale(1.3);}
+}
+/*visual - slick-dots*/
+.slick-dots {position: absolute;  right: 4.5%; bottom: 30px;}
+.slick-dots li button {text-indent: -9999px; width: 12px; height: 12px;background: #ccc; border:none; cursor:pointer; margin-bottom: 15px;}
+.slick-dots li.slick-active button {background: #39312b; }
