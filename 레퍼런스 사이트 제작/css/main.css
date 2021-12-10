@@ -246,19 +246,144 @@ section.premium .banner li:nth-child(4).motion{right: 2%; width: 32%; max-width:
 
 
 /* section - global */
-section.global{}
-section.global:before{}
-section.global .title h2{}
-section.global .title p{}
-section.global ul{}
-section.global ul li{}
-section.global ul li:nth-child(1),section.global ul li:nth-child(3){}
-section.global ul li a{}
-section.global ul li a .img{}
-section.global ul li a .img img{}
-section.global ul li a .img img:after{}
-section.global ul li a:hover .img, section.global ul li a:focus .img{}
-section.global ul li a:hover:after, section.global ul li a:focus:after{}
-section.global ul li a h3{}
-section.global ul li a h3 span{}
-section.global ul li a p{}
+section.global{width: 95%; margin: 40px auto; padding: 40px 0; text-align: center; position: relative;}
+/* 배경 박스 */
+section.global:before{content: ''; width: 100%; height: 45%; background-color: #eee; position: absolute; left: 0; bottom: 0; z-index: -1; }
+section.global .title h2{font-size: 30px; margin-bottom: 20px;}
+section.global .title p{font-size: 18px; line-height: 1.4; margin-bottom: 50px;}
+section.global ul{overflow: hidden; padding-top: 50px;}
+section.global ul li{float: left; width: 25%; padding: 15px; box-sizing: border-box;}
+section.global ul li:nth-child(1),section.global ul li:nth-child(3){margin-top: -50px;}
+section.global ul li a{display: block;}
+section.global ul li a .img{box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25); position: relative; transition: all 0.5s;} /*x축 y축 섀도크기*/
+section.global ul li a .img img{width: 100%;}
+section.global ul li a .img:after{content: 'VIEW'; width: 100%; height: 100%; 
+    background-color: rgba(44, 35, 28, 0.8);
+    position: absolute; left: 0; top:0; font-size: 22px; color: #d4d4d4; padding-top: 200px;
+    box-sizing: border-box; opacity: 0; transition: all 0.2s;
+}
+section.global ul li a:hover .img, section.global ul li a:focus .img{
+    transform: translate(-8px,-8px);
+    box-shadow: 15px 18px 10px rgba(0, 0, 0, 0.35);
+}
+section.global ul li a:hover .img:after, section.global ul li a:focus .img:after{opacity: 1;}
+section.global ul li a h3{font-size: 22px; margin: 40px 0 15px;}
+section.global ul li a h3 span{ display: block; font-size: 18px; font-weight: normal; color: #888;}  /*br태그는 웬만하면 사용 자제...*/
+section.global ul li a p{margin-top: 20px; box-sizing: border-box; font-size: 17px;}
+
+/* global - animate */
+section.global.motion ul li { animation-name: slid-up; animation-duration: 1s;}
+section.global.motion ul li:nth-child(2) { animation-name: slid-up; animation-duration: 1.4s;}
+section.global.motion ul li:nth-child(3) { animation-name: slid-up; animation-duration: 1.7s;}
+section.global.motion ul li:nth-child(4) { animation-name: slid-up; animation-duration: 2s;}
+
+/* footer */
+footer{ text-align: center; }
+footer .sns li{display: inline-block; margin-left: 28px; margin-top: 100px;}  /*li는 block요소*/
+footer .footerLogo{
+    margin-top: 30px;
+    margin-left: 20px;     
+    display: block;
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: -6px;
+    color: #39312b;
+    position: relative;
+    margin-bottom: 30px;
+    }
+footer ul li{font-size: 17px; line-height: 1.4;}
+footer ul li .copyright{ color: #999; font-weight: 100; margin-top: 20px; display: block;}/*span태그는 i/b요소라서 block 으로 바꿔주기*/
+footer .box{margin-top: 100px; background: url(../img/bottom_bg.jpg) no-repeat center/cover; padding: 150px 0px;}
+footer .box.motion h2{color: #fff; line-height: 1.6; font-size: 22px; font-weight: 300; letter-spacing: -1px;
+    animation-name: slid-up;
+    animation-duration: 1s;
+}
+
+/* 모바일 햄버거 메뉴/취소 */
+header .open{display: none;}
+header .close{display: none;}
+
+/* 모바일용 줄바꿈 */
+br.mo{display: none;}
+
+/* 반응형 시작 */
+/* 태블릿 : 1100px~951px */
+@media screen and(max-width: 1100px){
+    .wrap{min-width: 100%}
+
+
+    /* header */
+    header{height: 60px; line-height: 60px; padding: 0 10px;}
+    /* 햄버거 메뉴 */
+    header .open{display: block; float: right; font-size: 32px; height: 60px; padding-top: 5px; box-sizing: border-box;}
+    header .bg{width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.6); display: block; position: absolute; top: 0; z-index: 200; left: 0; display: none;}
+    header .logo{}
+    header nav{}
+    header nav.on{}
+    header nav .close{}
+    header nav .gnb{margin-top: 100px;}
+    header nav .gnb li{}
+    header nav .gnb li a{}
+    header nav .gnb li a:after{display: none;}
+    /* visual - slide */
+    section.visual{}
+    section.visual .img img{}
+    section.visual .title{}
+    section.visual .menu{}
+    section.visual .menu li{}
+    section.visual .menu li a p{}
+    .slick-dots{}
+
+    /* about - section */
+    section.about {}
+    section.about img{}
+    section.about .inner .line{}
+    section.about .inner ul{}
+    section.about .inner ul li{}
+    section.about .inner ul li:nth-child(3){}
+
+    /* premium - section */
+    section.premium{}
+    section.premium .title{}
+    section.premium .tetImg{}
+    /* global - section */
+    section.global{}
+    section.global ul li{}
+    section.global ul li a p {}
+    section.global ul li a .img:after {}
+}
+/* 반응형 시작 */
+/*  951px 이하 */
+@media screen and(max-width: 950px){
+/* header */
+
+    /* slide */
+
+    /* about - section */
+    /* premium - section */
+    /* global - section */
+}
+
+/* 반응형 시작 */
+/*  750px 이하 */
+@media screen and(max-width: 750px){
+    /* header */
+
+    /* slide */
+
+    /* about - section */
+    /* premium - section */
+    /* global - section */
+}
+
+/* 반응형 시작 */
+/* 모바일 : 320px 이하 */
+@media screen and(max-width: 320px){
+    /* header */
+
+    /* slide */
+
+    /* about - section */
+    /* premium - section */
+    /* global - section */
+}
