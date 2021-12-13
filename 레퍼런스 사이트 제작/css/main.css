@@ -307,8 +307,8 @@ header .close{display: none;}
 br.mo{display: none;}
 
 /* 반응형 시작 */
-/* 태블릿 : 1100px~951px */
-@media screen and(max-width: 1100px){
+/* 태블릿 가로 : 1100px~951px */
+@media screen and (max-width: 1100px){
     .wrap{min-width: 100%}
 
 
@@ -317,73 +317,153 @@ br.mo{display: none;}
     /* 햄버거 메뉴 */
     header .open{display: block; float: right; font-size: 32px; height: 60px; padding-top: 5px; box-sizing: border-box;}
     header .bg{width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.6); display: block; position: absolute; top: 0; z-index: 200; left: 0; display: none;}
-    header .logo{}
-    header nav{}
-    header nav.on{}
-    header nav .close{}
+    header .logo{font-size: 30px; letter-spacing: -4px;}
+    header nav{background-color: #fff; width: 0; height: 100vh; position: absolute; right: 0; top: 0; overflow: hidden;
+        transition: width 0.3s; z-index: 300; 
+    }
+    header nav.on{
+        width: 70%; min-width: 300px;
+    }
+    /* 모바일 X버튼 */
+    header nav .close{display: block; position: absolute; right: 10px; top: 0; font-size: 35px; padding: 5px; box-sizing: border-box;}
     header nav .gnb{margin-top: 100px;}
-    header nav .gnb li{}
-    header nav .gnb li a{}
+    header nav .gnb li{display: block; width: 10%; margin: 0; line-height: 60px;}
+    header nav .gnb li a{width: 100%; padding-left: 30px; box-sizing: border-box; font-size: 20px;}
     header nav .gnb li a:after{display: none;}
     /* visual - slide */
-    section.visual{}
-    section.visual .img img{}
-    section.visual .title{}
-    section.visual .menu{}
-    section.visual .menu li{}
-    section.visual .menu li a p{}
-    .slick-dots{}
+    section.visual{margin-top: 60px;}
+    section.visual .img img{height: 100%; width: auto;}
+    section.visual .title{left: 5%;}
+    section.visual .menu{width: 100%; left: 5%;}
+    section.visual .menu li{margin-right: 30px;}
+    section.visual .menu li a p{font-size: 17px;}
+    .slick-dots{right: 2.5%;}
 
     /* about - section */
-    section.about {}
-    section.about img{}
-    section.about .inner .line{}
-    section.about .inner ul{}
-    section.about .inner ul li{}
-    section.about .inner ul li:nth-child(3){}
+    section.about {width: 100%; height: 600px; }
+    section.about img{height: 100%; width: 100%;}
+    section.about .inner .line{left: 5%;}
+    section.about .inner ul{width: 80%;}
+    section.about .inner ul li{width: 50%;}
+    section.about .inner ul li:nth-child(3){margin-left: 25%;}
 
     /* premium - section */
-    section.premium{}
-    section.premium .title{}
-    section.premium .tetImg{}
+    section.premium{width: 100%; height: 800px;}
+    section.premium .title{left: 5%;}
+    section.premium .txtImg{left: 5px;}
     /* global - section */
-    section.global{}
-    section.global ul li{}
-    section.global ul li a p {}
-    section.global ul li a .img:after {}
+    section.global{width: 100%;}
+    section.global ul li{padding: 10px;}
+    section.global ul li a p {font-size: 15px;}
+    section.global ul li a .img:after {display: none;}
+    /*hover는 pc에서만 가능하다!*/
 }
 /* 반응형 시작 */
-/*  951px 이하 */
-@media screen and(max-width: 950px){
-/* header */
-
-    /* slide */
+/*  태블릿 세로 - 950px 이하 */
+@media screen and (max-width: 950px){
+    /* visual */
+    section.visual .menu{display: none; width: 0; height: 0;}
 
     /* about - section */
+    section.about {height: 480px;}
+    section.about .inner .line{width: 60%;}
+    section.about .inner ul{width: 95%;}
+    section.about .inner ul li{width: 33.3333%; font-size: 12px;}
+    section.about .inner ul li:nth-child(3){margin-left: 0;}
     /* premium - section */
+    section.premium .title{width: 100%; left: 0; top: 20px; text-align: center;}
+    section.premium .txtImg{height: 60px; left: 20px; top: 28%;}
+    section.premium .txtImg img{height: 100%;}
+    section.premium .banner{position: relative; width: 80%; left: 50%;
+        transform: translateX(-50%);
+        top: 30%;
+        height: 500px;
+    }
+    section.premium .banner li:nth-child(1).motion{left: 15%; width: 22%;}
+    section.premium .banner li:nth-child(2).motion{left: 8%; width: 22%;}
+    section.premium .banner li:nth-child(3).motion{left: 38%; width: 22%;}
+    section.premium .banner li:nth-child(4).motion{left: 50%; width: 48%;}
+    /* global - section */
+    section.global .title h2{font-size: 20px;}
+    section.global .title p{font-size: 13px;}
+    section.global ul{width: 95%; margin: auto;}
+    section.global.motion ul li{width: 50%; margin-bottom: 20px;}
+    section.global ul li a h3{font-size: 16px; margin: 20px 0 10px;}
+    section.global ul li a h3 span{font-size: 12px;}
+    section.global ul li a p{font-size: 10px;}
+    section.global:before{height: 48%;}
+    /* footer */
+    footer{padding-top: 50px;}
+    footer .sns li:last-child{margin-right: 0;}
+    footer .footerLogo{font-size: 28px; letter-spacing: -4px;}
+    footer ul li{font-size: 13px;}
+    footer ul li .copyright{font-size: 13px; margin-top: 10px;}
+    footer .box{padding: 80px 0;}
+    footer .box.motion h2{font-size: 17px;}
+}
+
+/* 반응형 시작 */
+/* 모바일 세로 750px 이하 */  /*and하고 띄어쓰기 해줘야함*/
+@media screen and (max-width: 750px){
+    /* visual */
+    section.visual {height: 80vh; overflow: hidden;}
+    section.visual .img{width: 87%;}
+    section.visual .img img{height: 80vh; width: auto;}
+    section.visual .img .page img{width: 75%; height: auto; margin-left: 8%;}
+    br.mo{display: block;}
+    section.visual .title h2{font-size: 29px;}
+    section.visual .title p{font-size: 14px;}
+    .slick-dots{right: 20px;}
+    /* about - section */
+    section.about .inner .motion h2{font-size: 20px; margin-bottom: 10px;}
+    section.about .inner .line{display: none;}
+    section.about .inner ul li{width: 100%; margin: 20px 0 0; font-size: 13px;}
+    section.about .inner ul li h3{font-size: 16px; margin-bottom: 8px;}
+    /* premium - section */
+    section.premium{height: 685px;}
+    section.premium .title h2{font-size: 20px;}
+    section.premium .title p{font-size: 13px; margin-bottom: 20px;}
+    section.premium .title a{font-size: 18px;}
+    section.premium .title a:before{width: 60px; height: 12px;}
+    section.premium .txtImg{left: 0; height: 32px; text-align: center;}
+    section.premium .banner{height: 400px; width: 100%;}
+    section.premium .banner li:nth-child(1).motion{left: 10%;}
+    section.premium .banner li:nth-child(2).motion{left: 5%;}
+    section.premium .banner li:nth-child(3).motion{left: 42%;}
+    section.premium .banner li:nth-child(4).motion{left: 44%; top: -5px;}
     /* global - section */
 }
 
 /* 반응형 시작 */
-/*  750px 이하 */
-@media screen and(max-width: 750px){
-    /* header */
-
-    /* slide */
-
+/* 모바일 가로 : 320px 이하 */
+@media screen and (max-width: 320px){
+    /* visual */
+    section.visual .title h2{font-size: 22px;}
+    section.visual .title p {font-size: 11px;}
+    section.visual .img .page img{width: 55%; margin-left: 15%;}
+    .slick-dots li button{height: 8px; margin-bottom: 15px; }
     /* about - section */
+    section.about {height: 480px;}
+    section.about .inner.motion h2{font-size: 16px;}
+    section.about .inner ul li h3{font-size: 14px;}
+    section.about .inner ul li{font-size: 11px;}
     /* premium - section */
+    section.premium{height: 600px;}
+    section.premium .title h2{font-size: 16px;}
+    section.premium .title p{font-size: 11px;}
+    section.premium .banner{height: 350px; top: 33%;}
+    section.premium .txtImg.motion{top: 33%;}
+    section.premium .banner li:nth-child(1).motion{width: 25%;}
+    section.premium .banner li:nth-child(2).motion{width: 25%;}
+    section.premium .banner li:nth-child(3).motion{width: 25%;}
+  
     /* global - section */
-}
+    section.global .title h2{font-size: 16px;}
+    section.global .title p{font-size: 11px;}
+    section.global ul li a h3{font-size: 13px;}
 
-/* 반응형 시작 */
-/* 모바일 : 320px 이하 */
-@media screen and(max-width: 320px){
-    /* header */
-
-    /* slide */
-
-    /* about - section */
-    /* premium - section */
-    /* global - section */
+    /* footer */
+    footer ul li{font-size: 10px;}
+    footer .box{padding: 50px 0;} 
+    footer .box.motion h2 {font-size: 14px;}
 }
