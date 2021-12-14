@@ -19,18 +19,20 @@ $(function(){
     })
 
     /* 모바일 네비게이션 */
-    // 햄버거 버튼 클릭 이벤트
+    // 햄버거 버튼 클릭 이벤트/* 12/14 수정사항 */
     $('header .open').on('click',function(){
-        $('body').css({'overflow' : 'hidden'})
-        $('header .bg').css({'display': 'block'})
-        $('header nav').addClass('on')
+        $('body').css({'overflow' : 'hidden'});
+        $('header .bg').fadeIn(1500);
+        $('header nav').addClass('on');
+        $('header nav').css({'width':'300px'})
     })
 
-    // X 버튼 클릭 이벤트  & 여백을 눌러도 변함
+    // X 버튼 클릭 이벤트  & 여백을 눌러도 변함/* 12/14 수정사항 */
     $('header .close, header .bg').on('click',function(){
         $('body').css({'overflow' : 'auto'})
-        $('header .bg').css({'display': 'none'})
+        $('header .bg').fadeOut(1500);
         $('header nav').removeClass('on')
+        $('header nav').css({'width':'0px'})
     })
 
 
