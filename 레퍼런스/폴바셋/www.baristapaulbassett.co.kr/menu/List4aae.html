@@ -1,0 +1,381 @@
+
+
+  
+
+
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from www.baristapaulbassett.co.kr/menu/List.pb?cid1=C&cid2=A by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Dec 2021 07:20:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   
+
+
+ 
+
+
+	
+
+	 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" type="image/x-icon" sizes="32x32" href="../images/common/favicon_32.png" />
+<link rel="icon" type="image/x-icon" sizes="196x196" href="../images/common/favicon_196.png" />
+<link rel="apple-touch-icon-precomposed" sizes="32x32"  href="../images/common/favicon_32.png">
+<link rel="apple-touch-icon-precomposed" sizes="196x196" href="../images/common/favicon_196.png"> 
+
+ 
+<title> MENU | PaulBassett</title>
+
+<link rel="stylesheet" href="../css/fontsaf32.css?time=1639552600013" type="text/css" media="all" /> 
+<link rel="stylesheet" href="../css/commonaf32.css?time=1639552600013" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/layoutaf32.css?time=1639552600013" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/swiperaf32.css?time=1639552600013" type="text/css" media="all" /> 
+<link rel="stylesheet" href="../css/slickaf32.css?time=1639552600013" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/animateaf32.css?time=1639552600013" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/contentaf32.css?time=1639552600013" type="text/css" media="all" />
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/imagesloaded.pkgd.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/uiaf32.js?time=1639552600013"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/slick.js"></script>
+
+<script>
+function _jssoCompleted(data, code){
+	if (data != "") {
+		 $.ajax({
+			url : "/member/loginSSO.pb",
+			data: {"data":data},
+			type: "POST",
+			dataType : "json",
+			async: false,
+			success : function(data) {
+				var url = location.href;
+				if (data.succeed) {
+					window.location.reload(true);
+				}else{
+				}
+			}
+		});
+	}
+}
+</script>	
+
+<script type="text/javascript" src="https://sso.maeildo.com:3443/findCookie.jsp?j_sso_q=CPhp92oyCK09psWac%2Fg%2BX64wyB0C1cdKOcbJGaz8URhOOGgvnqJrSr7HMckK2TchS5aGv6X%2F%2BLyJ%2BFzkCNotA2tZQ3g0VnVRQjlLNmFVNTR1RTJIR2hJakJBd1NESnpRclJiSXNTTkpYWkU9"></script>
+
+	 
+<script>
+	function goView(dpid){
+		var frm = document.moveFrm;
+		frm.action = "/menu/View.pb";
+		frm.dpid.value = dpid;
+		
+		frm.submit();
+	}
+	
+	$(function() {	    
+		$(".footMenu li:nth-child(1).on").parents(".footMenu").addClass("imgOpenWrap1");
+		$(".footMenu li:nth-child(2).on").parents(".footMenu").addClass("imgOpenWrap2");
+		$(".footMenu li:nth-child(3).on").parents(".footMenu").addClass("imgOpenWrap3");
+		$(".footMenu li:nth-child(4).on").parents(".footMenu").addClass("imgOpenWrap4");
+		$(".footMenu li:nth-child(5).on").parents(".footMenu").addClass("imgOpenWrap5");
+		
+		
+		$(".footMenu li").bind("mouseenter focusin", function(){
+			var index = $(".footMenu ul li").index(this);
+			console.log(index)
+			
+			if(index == 0){
+				$(".footMenu>ul").removeClass().addClass('imgOpen1');
+				
+			}else if(index == 1){
+				$(".footMenu>ul").removeClass().addClass('imgOpen2');
+				
+			}else if(index == 2){
+				$(".footMenu>ul").removeClass().addClass('imgOpen3');
+				
+			}
+			else if(index == 3){
+				$(".footMenu>ul").removeClass().addClass('imgOpen4');
+				
+			}
+			else if(index == 4){
+				$(".footMenu>ul").removeClass().addClass('imgOpen5');
+				
+			}
+		})
+
+		
+		.bind("mouseleave focusout" , function(){
+			$(this).parent().removeClass();
+			return false;
+		});
+		
+		
+	})
+
+</script>
+</head>
+<body>
+<div id="wrapper">
+	    
+
+		     
+
+<script>
+$(function(){
+	
+	if($("#mainWrap").length < 1){	
+		$(window).scroll(function(){
+			var scrollTop = $(this).scrollTop();
+			if(scrollTop > 0){
+				$("#headerWrap").addClass("on")
+			}else{
+				$("#headerWrap").removeClass("on")
+			}
+		});
+	}
+	$("#gnb>ul").bind("mouseenter focusin", function(){
+		$(this).parents("#headerWrap").addClass("styleB");
+		$("#gnb>ul").parent().addClass("on");
+		return false;
+	})
+	.bind("mouseleave focusout" , function(){
+		$(this).parents("#headerWrap").removeClass("styleB");
+		$("#gnb>ul").parent().removeClass("on");
+		return false;
+	});
+});
+</script>
+<div id="skipNav">
+	<a href="#container">본문 바로가기</a>
+	<a href="#gnb">메뉴 바로가기</a>
+</div>
+<div id="headerWrap">
+	<div id="header">
+		<h1><a href="../Index.html"></a></h1>
+		<div class="back">
+			
+		</div>
+		<div id="gnb">
+			<ul>
+				<li class="subDeth"><a href="../aboutus/brand/Identity.html">ABOUT US</a>
+					<ul>
+						<li><a href="../aboutus/brand/Identity.html">Brand</a></li>
+						<li><a href="../aboutus/intro/Ceo.html">회사소개</a></li>
+						<li><a href="../aboutus/contribution/Contribution.html">CSR</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="new/List.html">MENU</a>
+					<ul>
+						<li><a href="new/List.html">NEW</a></li>
+						<li><a href="List9e24.html?cid1=A">COFFEE</a></li>
+						<li><a href="Listb034.html?cid1=B">BEVERAGE</a></li>
+						<li><a href="Listcaa1.html?cid1=C">ICE-CREAM</a></li>
+						<li><a href="List245b.html?cid1=D">FOOD</a></li>
+						<li><a href="List725a.html?cid1=E">PRODUCT</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="../store/Store.html">STORE</a>
+					<ul>
+						<li><a href="../store/Store.html">매장찾기</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="../society/Introduction.html">SOCIETY</a>
+					<ul>
+						<li><a href="../society/Introduction.html">Paul Bassett Society</a></li>
+						<li><a href="../society/Rating.html">회원 등급 혜택</a></li>
+						<li><a href="../society/Ecard.html">e-Card 선물</a></li>
+						<li><a href="../society/MobileApp.html">모바일 App 안내</a></li>
+						<!-- <li><a href="/society/Estamp.pb">e-Stamp 안내</a></li> -->
+						<li><a href="../society/Partnership.html">제휴혜택 안내</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="../whatsNews/event/List.html">WHAT'S NEW</a>
+					<ul>
+						<li><a href="../whatsNews/event/List.html">Event / News</a></li>
+						<li><a href="../whatsNews/class/ClassInfo.html">Coffee Class</a></li>
+						<li><a href="../whatsNews/notice/List.html">Notice</a></li>
+					</ul>
+				</li>
+				<li class="last subDeth"><a href="../eshop/index.html">E-SHOP</a>
+					<ul>
+						<li><a href="../eshop/index.html">E-SHOP 소개</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<span id="gnbOverBar"></span>
+		<div class="utilWrap">
+			<ul class="util">
+			
+				
+				
+					<li><a href="../member/Login.html">Login</a></li>
+					<li><a href="../member/join/Certify.html">Join</a></li>				
+				
+			
+				 
+				<li><a href="../contactus/Faq.html">Contact us</a></li>
+				<li><a href="../contactus/recruit/process.html">Recruit</a></li>
+				<li><a href="../contactus/Faq.html">FAQ</a></li>
+			</ul>
+			<ul class="topMenu">
+				<li><a href="../contactus/Suggest.html">신규입점제의</a></li>
+				<li><a href="../contactus/coffeebeans/Signature.html">납품문의</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+ 
+	<div id="container" class="menuWrap">
+		<!-- 내용영역 -->
+		    
+
+		     
+
+
+	
+	
+	
+		<div id="subVisual" class="iceCreamVisual">
+			<h2><span class="bigTxt">ICE-CREAM</span><span>상하목장 유기농 우유로 만든 깊고 풍부한 유풍미의 프리미엄 소프트 아이스크림</span></h2>
+		</div>
+	
+	
+				
+	
+	
+	
+ 
+		    
+
+		     
+<div class="tabStyleA tabStyleB">
+
+
+		
+	
+		
+		<ul class="listTab iceCream">
+			<li class=""><a href="Listcaa1.html?cid1=C">전체</a></li>
+			<li class="on"><a href="List4aae.html?cid1=C&amp;cid2=A">Milk Ice-Cream</a></li>
+			<li class=""><a href="List8018.html?cid1=C&amp;cid2=B">Season Ice-Cream</a></li>
+		</ul>
+	
+	
+		
+	
+</div><!-- 해당메뉴일때 class="on" -->
+		 
+		<!-- menuList -->
+		<div class="menuList">
+			<ul class="listStyleB">
+			
+							
+					
+						<li>
+							<div class="iconArea">
+								
+									<span class="bestIcon">Best</span>
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB170039');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/C/thumbnail_1_201903210546073511.jpg" alt=""></div>
+								<div class="txtArea">밀크 아이스크림 (컵)<span class="sTxt">Milk Ice-Cream (Cup)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+									<span class="bestIcon">Best</span>
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB170040');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/C/thumbnail_1_201903210549326191.jpg" alt=""></div>
+								<div class="txtArea">밀크 아이스크림 (콘)<span class="sTxt">Milk Ice-Cream (Cone)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB179703');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/C/thumbnail_1_201904100519063190.jpg" alt=""></div>
+								<div class="txtArea">밀크 소프트 아포가토<span class="sTxt">Milk Soft Affogato</span></div>	
+							</a>
+						</li>
+					
+				
+				
+							
+			</ul>
+			
+			<div class="footMenu">
+				<ul>
+					<li class=""><a href="List9e24.html?cid1=A"><span>COFFEE</span></a></li>
+					<li class=""><a href="Listb034.html?cid1=B"><span>BEVERAGE</span></a></li>
+					<li class=""><a href="List245b.html?cid1=D"><span>FOOD</span></a></li>
+					<li class="on"><a href="Listcaa1.html?cid1=C"><span>ICE-CREAM</span></a></li>
+					<li class=""><a href="List725a.html?cid1=E"><span>PRODUCT</span></a></li>
+				</ul><!-- 해당메뉴일때 class="on" -->
+			</div>		
+		</div>
+		<!-- //menuList -->
+		<!-- //내용영역 -->
+	</div>
+	
+	    
+
+		     
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148615730-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148615730-1');
+</script>
+<div id="footerWrap">
+	<ul class="footerMenu">
+		<li><a href="../footer/Privacy.html">개인정보처리방침</a></li>
+		<li><a href="../contactus/Suggest.html">신규입점안내</a></li>
+		<li><a href="../footer/Service.html">이용약관</a></li>
+		<li><a href="../footer/Society.html">소사이어티카드 이용약관</a></li>
+		<li><a href="../footer/GiftCardAgree.html">기프트카드 이용약관</a></li>
+		<li><a href="../contactus/Faq.html">FAQ</a></li> 
+		<li><a href="../footer/siteMap.html">사이트맵</a></li> 
+	</ul>
+	<div class="address">엠즈씨드(주) 대표이사 : 김용철  주소 : 서울특별시 강남구 도산대로 75길 22 (청담동)<br>사업자등록번호 211-88-95935  대표번호 1899-8829  개인정보관리책임자 : 정보문
+		<span class="copyright">© 2019 m’s seed Co., Ltd. All rights reserved.</span>
+	</div>
+	<div class="footSnsWrap">
+		<ul>
+			<li><img src="../images/common/footer01.png" alt="ccm"></li>
+			<li><img src="../images/common/footer02.png" alt="2017년 제 19회 대한민국 브랜드 대상 산업정책 연구원이사장상"></li>
+		</ul>
+		<div class="footSns"><a href="https://www.facebook.com/paulbassettkorea/" target="_blank"><span>페이스북</span></a><a href="https://www.instagram.com/paulbassettkorea/" target="_blank"><span>인스타그램</span></a></div>
+		
+	</div>
+</div>
+
+ 
+	<form name="moveFrm" method="get">
+		<input type="hidden" name="cid1" value="C">
+		<input type="hidden" name="cid2" value="A">		
+		<input type="hidden" name="dpid" value="">
+	</form>
+</div>
+</body>
+
+<!-- Mirrored from www.baristapaulbassett.co.kr/menu/List.pb?cid1=C&cid2=A by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Dec 2021 07:20:34 GMT -->
+</html>

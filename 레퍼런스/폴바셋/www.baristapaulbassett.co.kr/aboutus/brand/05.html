@@ -1,0 +1,164 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" type="image/x-icon" sizes="32x32" href="/images/common/favicon_32.png" />
+<link rel="icon" type="image/x-icon" sizes="196x196" href="/images/common/favicon_196.png" />
+<link rel="apple-touch-icon-precomposed" sizes="32x32"  href="/images/common/favicon_32.png">
+<link rel="apple-touch-icon-precomposed" sizes="196x196" href="/images/common/favicon_196.png"> 
+<title> PaulBassett</title>
+<link rel="stylesheet" href="/css/fonts.css" type="text/css" media="all" /> 
+<link rel="stylesheet" href="/css/common.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/layout.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/content.css" type="text/css" media="all" />
+<script src="/js/jquery-3.1.1.min.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/ui.js"></script>
+
+<script>
+	function goPrevPage(){
+		history.back();
+	}
+	$(function(){
+		
+		if($("#mainWrap").length < 1){	
+			$(window).scroll(function(){
+				var scrollTop = $(this).scrollTop();
+				if(scrollTop > 0){
+					$("#headerWrap").addClass("on")
+				}else{
+					$("#headerWrap").removeClass("on")
+				}
+			});
+		}
+		$("#gnb").bind("mouseenter focusin", function(){
+			$(this).parents("#headerWrap").addClass("styleB");
+			$("#gnb").addClass("on");
+			return false;
+		})
+		.bind("mouseleave focusout" , function(){
+			$(this).parents("#headerWrap").removeClass("styleB");
+			$("#gnb").removeClass("on");
+			return false;
+		});
+	});
+</script>
+
+</head>
+<body class="bgNone">
+	<div id="wrapper">
+		<div id="skipNav">
+		<a href="#container">본문 바로가기</a>
+		<a href="#gnb">메뉴 바로가기</a>
+	</div>
+	<div id="headerWrap">
+		<div id="header">
+			<h1><a href="/Index.pb"></a></h1>
+			<div id="gnb">
+				<ul>
+					<li class="subDeth"><a href="/aboutus/PaulBassett.pb">ABOUT US</a>
+						<ul>
+							<li><a href="/aboutus/PaulBassett.pb">WBC 챔피언 폴 바셋</a></li>
+							<li><a href="/aboutus/Ceo.pb">CEO 인사말</a></li>
+							<li><a href="/aboutus/brand/Identity.pb">Brand</a></li>
+							<li><a href="/aboutus/barista/Barista.pb">Barista</a></li>
+							<li><a href="/aboutus/contribution/Contribution.pb">Social Contribution</a></li>
+						</ul>
+					</li>
+					<li class="subDeth"><a href="/menu/new/List.pb">MENU</a>
+						<ul>
+							<li><a href="/menu/new/List.pb">NEW</a></li>
+							<li><a href="/menu/List.pb?cid1=A">COFFEE</a></li>
+							<li><a href="/menu/List.pb?cid1=B">BEVERAGE</a></li>
+							<li><a href="/menu/List.pb?cid1=C">ICE-CREAM</a></li>
+							<li><a href="/menu/List.pb?cid1=D">FOOD</a></li>
+							<li><a href="/menu/List.pb?cid1=E">PRODUCT</a></li>
+						</ul>
+					</li>
+					<li class="subDeth"><a href="/store/Store.pb">STORE</a>
+						<ul>
+							<li><a href="/store/Store.pb">매장찾기</a></li>
+						</ul>
+					</li>
+					<li class="subDeth"><a href="/society/Introduction.pb">SOCIETY</a>
+						<ul>
+							<li><a href="/society/Introduction.pb">Paul Bassett Society</a></li>
+							<li><a href="/society/Rating.pb">회원 등급 혜택</a></li>
+							<li><a href="/society/MobileApp.pb">모바일 App안내</a></li>
+							<li><a href="/society/Estamp.pb">e-Stamp 안내</a></li>
+							<li><a href="/society/Ecard.pb">e-Card 안내</a></li>
+							<li><a href="/society/Partnership.pb">제휴혜택 안내</a></li>
+						</ul>
+					</li>
+					<li class="subDeth"><a href="/whatsNews/event/List.pb">WHAT'S NEW</a>
+						<ul>
+							<li><a href="/whatsNews/event/List.pb">Event</a></li>
+							<li><a href="/whatsNews/class/ClassInfo.pb">Coffee Class</a></li>
+							<li><a href="/whatsNews/notice/List.pb">Notice</a></li>
+						</ul>
+					</li>
+					<li class="last subDeth"><a href="/eshop/index.pb">E-SHOP</a>
+						<ul>
+							<li><a href="/eshop/index.pb">E-SHOP 소개</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<span id="gnbOverBar"></span>
+			<div class="utilWrap">
+				<ul class="util">
+					<!-- <li><a href="/member/Login.pb">Login</a></li>
+					<li><a href="/member/join/Certify.pb">Join</a></li> -->
+					<li><a href="/contactus/Faq.pb">Contact us</a></li>
+					<li><a href="/contactus/recruit/process.pb">Recruit</a></li>
+				</ul>
+				<ul class="topMenu">
+					<li><a href="/contactus/Suggest.pb">신규입점제의</a></li>
+					<li><a href="/contactus/coffeebeans/Signature.pb">납품문의</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="container" class="errorWrap">
+		<!-- 내용영역 -->
+		<div class="errorArea">
+			<div class="errorCont">
+				<p>죄송합니다. 페이지를 찾을 수 없습니다.
+					<span>주소가 잘못 입력되었거나 변경 혹은 삭제되어 요청하신 페이지를 찾을 수 없습니다.<br>입력하신 주소가 정확한지 다시 한번 확인해주세요.</span>
+				</p>
+				<div class="btnArea">
+					<a href="/Index.pb" class="btnStyleA">메인 페이지</a>
+					<a href="#" onclick="goPrevPage();return false;" class="btnStyleD">이전 페이지</a>
+				</div>
+			</div>
+		</div>
+		<!-- //내용영역 -->
+	</div>
+	
+	<div id="footerWrap">
+	<ul class="footerMenu">
+		<li><a href="/footer/Privacy.pb">개인정보처리방침</a></li>
+		<li><a href="/contactus/Suggest.pb">신규입점안내</a></li>
+		<li><a href="/footer/Service.pb">이용약관</a></li>
+		<li><a href="/footer/Society.pb">소사이어티카드 이용약관</a></li>
+		<li><a href="/footer/GiftCardAgree.pb">기프트카드 이용약관</a></li>
+		<li><a href="/footer/siteMap.pb">사이트맵</a></li> 
+	</ul>
+	<div class="address">엠즈씨드(주) 대표이사 : 김용철  주소 : 서울특별시 강남구 도산대로 75길 22 (청담동)<br>사업자등록번호 211-88-95935  대표번호 1899-8829  개인정보관리책임자 : 박헌덕
+		<span class="copyright">© 2019 m’s seed Co., Ltd. All rights reserved.</span>
+	</div>
+	<div class="footSnsWrap">
+		<ul>
+			<li><img src="/images/common/footer01.png" alt="ccm"></li>
+			<li><img src="/images/common/footer02.png" alt="2017년 제 19회 대한민국 브랜드 대상 산업정책 연구원이사장상"></li>
+		</ul>
+		<div class="footSns"><a href="https://www.facebook.com/paulbassettkorea/" target="_blank"><span>페이스북</span></a><a href="https://www.instagram.com/paulbassettkorea/" target="_blank"><span>인스타그램</span></a></div>
+		
+	</div>
+</div>
+</div>
+</body>
+</html>

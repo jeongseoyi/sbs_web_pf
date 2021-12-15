@@ -1,0 +1,935 @@
+
+
+  
+
+
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from www.baristapaulbassett.co.kr/menu/List.pb?cid1=E by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Dec 2021 07:16:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   
+
+
+ 
+
+
+	
+
+	 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" type="image/x-icon" sizes="32x32" href="../images/common/favicon_32.png" />
+<link rel="icon" type="image/x-icon" sizes="196x196" href="../images/common/favicon_196.png" />
+<link rel="apple-touch-icon-precomposed" sizes="32x32"  href="../images/common/favicon_32.png">
+<link rel="apple-touch-icon-precomposed" sizes="196x196" href="../images/common/favicon_196.png"> 
+
+ 
+<title> MENU | PaulBassett</title>
+
+<link rel="stylesheet" href="../css/fontsd38b.css?time=1639552480425" type="text/css" media="all" /> 
+<link rel="stylesheet" href="../css/commond38b.css?time=1639552480425" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/layoutd38b.css?time=1639552480425" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/swiperd38b.css?time=1639552480425" type="text/css" media="all" /> 
+<link rel="stylesheet" href="../css/slickd38b.css?time=1639552480425" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/animated38b.css?time=1639552480425" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/contentd38b.css?time=1639552480425" type="text/css" media="all" />
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/imagesloaded.pkgd.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/uid38b.js?time=1639552480425"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/slick.js"></script>
+
+<script>
+function _jssoCompleted(data, code){
+	if (data != "") {
+		 $.ajax({
+			url : "/member/loginSSO.pb",
+			data: {"data":data},
+			type: "POST",
+			dataType : "json",
+			async: false,
+			success : function(data) {
+				var url = location.href;
+				if (data.succeed) {
+					window.location.reload(true);
+				}else{
+				}
+			}
+		});
+	}
+}
+</script>	
+
+<script type="text/javascript" src="https://sso.maeildo.com:3443/findCookie.jsp?j_sso_q=RHjrgukh9VBRryVdMTjwaVjuIQFa0OM2KEaIVt9xDdQydaJvJvmo%2FkDS0uiq6xMcAT0sj9ko0emt01%2FxvtT8S3ZFbkR2QkdDekVqK1BVSlVsTTliazR5bk4yT2FEQ0l3TEhyKzNLNVArMVk9"></script>
+
+	 
+<script>
+	function goView(dpid){
+		var frm = document.moveFrm;
+		frm.action = "/menu/View.pb";
+		frm.dpid.value = dpid;
+		
+		frm.submit();
+	}
+	
+	$(function() {	    
+		$(".footMenu li:nth-child(1).on").parents(".footMenu").addClass("imgOpenWrap1");
+		$(".footMenu li:nth-child(2).on").parents(".footMenu").addClass("imgOpenWrap2");
+		$(".footMenu li:nth-child(3).on").parents(".footMenu").addClass("imgOpenWrap3");
+		$(".footMenu li:nth-child(4).on").parents(".footMenu").addClass("imgOpenWrap4");
+		$(".footMenu li:nth-child(5).on").parents(".footMenu").addClass("imgOpenWrap5");
+		
+		
+		$(".footMenu li").bind("mouseenter focusin", function(){
+			var index = $(".footMenu ul li").index(this);
+			console.log(index)
+			
+			if(index == 0){
+				$(".footMenu>ul").removeClass().addClass('imgOpen1');
+				
+			}else if(index == 1){
+				$(".footMenu>ul").removeClass().addClass('imgOpen2');
+				
+			}else if(index == 2){
+				$(".footMenu>ul").removeClass().addClass('imgOpen3');
+				
+			}
+			else if(index == 3){
+				$(".footMenu>ul").removeClass().addClass('imgOpen4');
+				
+			}
+			else if(index == 4){
+				$(".footMenu>ul").removeClass().addClass('imgOpen5');
+				
+			}
+		})
+
+		
+		.bind("mouseleave focusout" , function(){
+			$(this).parent().removeClass();
+			return false;
+		});
+		
+		
+	})
+
+</script>
+</head>
+<body>
+<div id="wrapper">
+	    
+
+		     
+
+<script>
+$(function(){
+	
+	if($("#mainWrap").length < 1){	
+		$(window).scroll(function(){
+			var scrollTop = $(this).scrollTop();
+			if(scrollTop > 0){
+				$("#headerWrap").addClass("on")
+			}else{
+				$("#headerWrap").removeClass("on")
+			}
+		});
+	}
+	$("#gnb>ul").bind("mouseenter focusin", function(){
+		$(this).parents("#headerWrap").addClass("styleB");
+		$("#gnb>ul").parent().addClass("on");
+		return false;
+	})
+	.bind("mouseleave focusout" , function(){
+		$(this).parents("#headerWrap").removeClass("styleB");
+		$("#gnb>ul").parent().removeClass("on");
+		return false;
+	});
+});
+</script>
+<div id="skipNav">
+	<a href="#container">본문 바로가기</a>
+	<a href="#gnb">메뉴 바로가기</a>
+</div>
+<div id="headerWrap">
+	<div id="header">
+		<h1><a href="../Index.html"></a></h1>
+		<div class="back">
+			
+		</div>
+		<div id="gnb">
+			<ul>
+				<li class="subDeth"><a href="../aboutus/brand/Identity.html">ABOUT US</a>
+					<ul>
+						<li><a href="../aboutus/brand/Identity.html">Brand</a></li>
+						<li><a href="../aboutus/intro/Ceo.html">회사소개</a></li>
+						<li><a href="../aboutus/contribution/Contribution.html">CSR</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="new/List.html">MENU</a>
+					<ul>
+						<li><a href="new/List.html">NEW</a></li>
+						<li><a href="List9e24.html?cid1=A">COFFEE</a></li>
+						<li><a href="Listb034.html?cid1=B">BEVERAGE</a></li>
+						<li><a href="Listcaa1.html?cid1=C">ICE-CREAM</a></li>
+						<li><a href="List245b.html?cid1=D">FOOD</a></li>
+						<li><a href="List725a.html?cid1=E">PRODUCT</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="../store/Store.html">STORE</a>
+					<ul>
+						<li><a href="../store/Store.html">매장찾기</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="../society/Introduction.html">SOCIETY</a>
+					<ul>
+						<li><a href="../society/Introduction.html">Paul Bassett Society</a></li>
+						<li><a href="../society/Rating.html">회원 등급 혜택</a></li>
+						<li><a href="../society/Ecard.html">e-Card 선물</a></li>
+						<li><a href="../society/MobileApp.html">모바일 App 안내</a></li>
+						<!-- <li><a href="/society/Estamp.pb">e-Stamp 안내</a></li> -->
+						<li><a href="../society/Partnership.html">제휴혜택 안내</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="../whatsNews/event/List.html">WHAT'S NEW</a>
+					<ul>
+						<li><a href="../whatsNews/event/List.html">Event / News</a></li>
+						<li><a href="../whatsNews/class/ClassInfo.html">Coffee Class</a></li>
+						<li><a href="../whatsNews/notice/List.html">Notice</a></li>
+					</ul>
+				</li>
+				<li class="last subDeth"><a href="../eshop/index.html">E-SHOP</a>
+					<ul>
+						<li><a href="../eshop/index.html">E-SHOP 소개</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<span id="gnbOverBar"></span>
+		<div class="utilWrap">
+			<ul class="util">
+			
+				
+				
+					<li><a href="../member/Login.html">Login</a></li>
+					<li><a href="../member/join/Certify.html">Join</a></li>				
+				
+			
+				 
+				<li><a href="../contactus/Faq.html">Contact us</a></li>
+				<li><a href="../contactus/recruit/process.html">Recruit</a></li>
+				<li><a href="../contactus/Faq.html">FAQ</a></li>
+			</ul>
+			<ul class="topMenu">
+				<li><a href="../contactus/Suggest.html">신규입점제의</a></li>
+				<li><a href="../contactus/coffeebeans/Signature.html">납품문의</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+ 
+	<div id="container" class="menuWrap">
+		<!-- 내용영역 -->
+		    
+
+		     
+
+
+	
+	
+	
+	
+	
+		<div id="subVisual" class="productVisual">
+			<h2><span class="bigTxt">PRODUCT</span><span>폴 바셋의 클래식 MD 상품들을 만나보세요</span></h2>
+		</div>	
+				
+	
+	
+	
+ 
+		    
+
+		     
+<div class="tabStyleA tabStyleB">
+
+
+		
+	
+	
+	
+		
+		<ul class="listTab product">
+			<li  class="on"><a href="List725a.html?cid1=E">전체</a></li>
+			<li class=""><a href="Listbf8d.html?cid1=E&amp;cid2=D">Barista Pouch</a></li>
+			<li class=""><a href="List04b7.html?cid1=E&amp;cid2=E">Whole Bean</a></li>
+			<li class=""><a href="List820f.html?cid1=E&amp;cid2=B">Tumbler</a></li>
+			<li class=""><a href="Listd77c.html?cid1=E&amp;cid2=A">Mug</a></li>
+			<li class=""><a href="List0aba.html?cid1=E&amp;cid2=C">ETC</a></li>
+		</ul>
+		
+	
+</div><!-- 해당메뉴일때 class="on" -->
+		 
+		<!-- menuList -->
+		<div class="menuList">
+			<ul class="listStyleB">
+			
+							
+					
+						<li>
+							<div class="iconArea">
+								
+									<span class="bestIcon">Best</span>
+								
+								
+									<span class="newIcon">New</span>
+								
+							</div>
+							<a href="#" onclick="goView('PB281169');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_202101200349465361.jpg" alt=""></div>
+								<div class="txtArea">시그니처 블렌드 스틱 커피<span class="sTxt">Signature Blend Stick Coffee</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+									<span class="newIcon">New</span>
+								
+							</div>
+							<a href="#" onclick="goView('PB271195');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_3_202107300554466601.jpg" alt=""></div>
+								<div class="txtArea">(돌체구스토 호환) 시그니처 블렌드 룽고<span class="sTxt">Signature Blend Lungo</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+									<span class="newIcon">New</span>
+								
+							</div>
+							<a href="#" onclick="goView('PB271196');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_3_202107300555271331.png" alt=""></div>
+								<div class="txtArea">(돌체구스토 호환) 브라질 싱글 오리진 룽고<span class="sTxt">Brazil Single Origin Lungo</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+									<span class="newIcon">New</span>
+								
+							</div>
+							<a href="#" onclick="goView('PB271197');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_3_202107300556028921.jpg" alt=""></div>
+								<div class="txtArea">(돌체구스토 호환) 과테말라 싱글 오리진 룽고<span class="sTxt">Guatemala Single Origin Lungo</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+									<span class="newIcon">New</span>
+								
+							</div>
+							<a href="#" onclick="goView('PB281208');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_202102100640496610.jpg" alt=""></div>
+								<div class="txtArea">폴바셋 밀크 초콜릿<span class="sTxt">Paul Basset Milk Chocolate</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+									<span class="bestIcon">Best</span>
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270892');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201903251027355080.jpg" alt=""></div>
+								<div class="txtArea">폴 바셋 바리스타 파우치  시그니처 블렌드<span class="sTxt">Signature Blend</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270893');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201903251050202680.jpg" alt=""></div>
+								<div class="txtArea">폴 바셋 바리스타 파우치 에티오피아 구지 G1<span class="sTxt">Ethiopa GUJI G1</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270894');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201903251039459210.jpg" alt=""></div>
+								<div class="txtArea">폴 바셋 바리스타 파우치 콜롬비아 자이로 무릴로<span class="sTxt">Colombia Jairo Murillro</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270895');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201903251029012440.jpg" alt=""></div>
+								<div class="txtArea">폴 바셋 바리스타 파우치 익스피리언스팩<span class="sTxt">Experience Pack</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271075');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_2_202001231056555580.jpg" alt=""></div>
+								<div class="txtArea">바리스타캡슐 시그니처 블렌드<span class="sTxt">Barista Capsule Signature Blend</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271076');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_2_202001231055073111.jpg" alt=""></div>
+								<div class="txtArea">바리스타캡슐 에티오피아 구지 G1<span class="sTxt">Barista Capsule Ethiopia Guji G1</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271077');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_2_202001231055314001.jpg" alt=""></div>
+								<div class="txtArea">바리스타캡슐 콜롬비아 자이로 무릴로<span class="sTxt">Barista Capsule Colombia Jairo Murillo</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+									<span class="bestIcon">Best</span>
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270494');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_2_201909200209328440.jpg" alt=""></div>
+								<div class="txtArea">폴 바셋 시그니처 블렌드 200g / 500g<span class="sTxt">Signature Blend 200g</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271036');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_2_202012070348407440.jpg" alt=""></div>
+								<div class="txtArea">콜롬비아 200g<span class="sTxt">Colombia 200g</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271035');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_2_202012070348558050.jpg" alt=""></div>
+								<div class="txtArea">과테말라 200g<span class="sTxt">Guatemala 200g</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270985');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_2_202012070348210330.jpg" alt=""></div>
+								<div class="txtArea">브라질 200g<span class="sTxt">Brazil 200g</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270498');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_2_202012070347179920.jpg" alt=""></div>
+								<div class="txtArea">에티오피아 200g<span class="sTxt">Ethiopia 200g</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270646');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201903270331358100.jpg" alt=""></div>
+								<div class="txtArea">클래식 텀블러 실버 (532ml)<span class="sTxt">Classic Tumbler Silver (532ml)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270647');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201903270331215600.jpg" alt=""></div>
+								<div class="txtArea">클래식 텀블러 메탈릭브라운 (532ml) <span class="sTxt">Classic Tumbler Metallic brown (532ml)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270644');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201903270338070820.jpg" alt=""></div>
+								<div class="txtArea">클래식 텀블러 실버 (946ml)<span class="sTxt">Classic Tumbler Silver (946ml)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270645');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201903270337216970.jpg" alt=""></div>
+								<div class="txtArea">클래식 텀블러 메탈릭브라운(946ml)<span class="sTxt">Classic Tumbler Metallic brown (946ml)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270771');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201903270319573270.jpg" alt=""></div>
+								<div class="txtArea">폴 바셋 아이스 텀블러 (플랫 리드)<span class="sTxt">Paul Bassett Ice Tumbler (Flat Lid)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270772');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201903270319420260.jpg" alt=""></div>
+								<div class="txtArea">폴 바셋 아이스 텀블러 (돔 리드)<span class="sTxt">Paul Bassett Ice Tumbler (Dome Lid)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270774');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_2_202104221119534690.png" alt=""></div>
+								<div class="txtArea">리유저블 텀블러 (블랙)<span class="sTxt">Reusable Tumbler (Black)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270954');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_2_202104221120140630.png" alt=""></div>
+								<div class="txtArea">리유저블 텀블러(블루밍 핑크)<span class="sTxt">Reusable Tumbler (Blooming Pink)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271129');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_202003120939354960.png" alt=""></div>
+								<div class="txtArea">리유저블 텀블러(스프링 그린)<span class="sTxt">Reusable Tumbler(Spring Green)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271080');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_2_202001291154057961.png" alt=""></div>
+								<div class="txtArea">폴 바셋 핸디 텀블러 (바이올렛)<span class="sTxt">Paul Bassett Handy Tumbler (Violet)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271081');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_2_202001291153466261.png" alt=""></div>
+								<div class="txtArea">폴 바셋 핸디 텀블러 (쿨그레이)<span class="sTxt">Paul Bassett Handy Tumbler (Cool Gray)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271082');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_3_202001291152154821.png" alt=""></div>
+								<div class="txtArea">폴 바셋 핸디 텀블러 (로즈핑크) <span class="sTxt">Paul Bassett Handy Tumbler (Rose Pink)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271084');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_2_202001131036027540.png" alt=""></div>
+								<div class="txtArea">폴 바셋 매트 텀블러 (473ml)<span class="sTxt">Paul Bassett Matt Tumbler(473ml)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271083');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_4_202001131035484350.png" alt=""></div>
+								<div class="txtArea">폴 바셋 매트 텀블러(355ml)<span class="sTxt">Paul Bassett Matt Tumbler(355ml)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271074');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201912230314543200.jpg" alt=""></div>
+								<div class="txtArea">리유저블 텀블러(레드베리)<span class="sTxt">Reusable Tumbler (Red Berry)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271019');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_2_202104221119239770.png" alt=""></div>
+								<div class="txtArea">리유저블 텀블러(프로즌 화이트)<span class="sTxt">Reusable Tumbler (Frozen White)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB281230');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_202104190700456000.jpg" alt=""></div>
+								<div class="txtArea">폴바셋 앵글머그 355ml 민트 그린<span class="sTxt">Paul Bassett Angle Mug 355ml_Mint green</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB281156');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_202011171151099780.jpg" alt=""></div>
+								<div class="txtArea">폴바셋 앵글머그 355ml 밀크 브라운<span class="sTxt">Paul Bassett Angle Mug 355ml_Milk Brown</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB281157');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_202011170413521580.jpg" alt=""></div>
+								<div class="txtArea">폴바셋 앵글머그 355ml 바이올렛<span class="sTxt">Paul Bassett Angle Mug 355ml_Violet</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271128');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_202003051056170600.png" alt=""></div>
+								<div class="txtArea">폴바셋 앵글머그 355ml 핑크<span class="sTxt">Paul Bassett Angle Mug 355ml_Pink</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271127');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_202003051100389130.png" alt=""></div>
+								<div class="txtArea">폴바셋 앵글머그 355ml 화이트<span class="sTxt">Paul Bassett Angle Mug 355ml_White</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271125');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_202003051059447350.png" alt=""></div>
+								<div class="txtArea">폴바셋 앵글머그 355ml 그레이<span class="sTxt">Paul Bassett Angle Mug 355ml_Gray</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271126');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_202003051058107400.png" alt=""></div>
+								<div class="txtArea">폴바셋 앵글머그 355ml 블랙<span class="sTxt">Paul Bassett Angle Mug 355ml_Black</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270874');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201904120629468791.png" alt=""></div>
+								<div class="txtArea">유광 로고 머그 화이트 (384ml)<span class="sTxt">Glossy logo Mug White (384ml)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270924');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201904120628521421.png" alt=""></div>
+								<div class="txtArea">유광 로고 머그 블랙 (384ml)<span class="sTxt">Glossy logo Mug Black (384ml)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270883');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201903270330006990.jpg" alt=""></div>
+								<div class="txtArea">폴 바셋 클래식 우산 (오리지널 로고)<span class="sTxt">Paul Bassett Classic Umbrella (Original Logo)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270882');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201903270330121880.jpg" alt=""></div>
+								<div class="txtArea">폴 바셋 클래식 우산 (회색로고)<span class="sTxt">Paul Bassett Classic Umbrella (Gray Logo)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270654');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201903270318087770.jpg" alt=""></div>
+								<div class="txtArea">클래식 머그타올 화이트/그레이<span class="sTxt">Classic Mug towel (White/Gray)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270653');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_2_201907150323117830.png" alt=""></div>
+								<div class="txtArea">클래식 머그타올 블랙/그레이<span class="sTxt">Classic Mug towel (Black/Gray)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270656');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201903270317569690.jpg" alt=""></div>
+								<div class="txtArea">클래식 머그타올 화이트/블랙<span class="sTxt">Classic Mug towel (White/Black)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270655');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201903270317402440.jpg" alt=""></div>
+								<div class="txtArea">클래식 머그타올 화이트/핑크<span class="sTxt">Classic Mug towel (White/Pink)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271085');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_202001080152018020.png" alt=""></div>
+								<div class="txtArea">폴 바셋 베이직 에코백 (그레이)<span class="sTxt">Paul Bassett Basic Ecobag (Gray)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271087');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_202001080150487610.png" alt=""></div>
+								<div class="txtArea">폴 바셋 베이직 에코백 (폴 브라운)<span class="sTxt">Paul Bassett Basic Ecobag (Paul Brown)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271086');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_202001080149343170.png" alt=""></div>
+								<div class="txtArea">폴 바셋 베이직 에코백 (블랙)<span class="sTxt">Paul Bassett Basic Ecobag (Black)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271016');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/E/thumbnail_1_201907190500231380.png" alt=""></div>
+								<div class="txtArea">폴바셋 카페백<span class="sTxt">Paul Bassett Cafe Bag </span></div>	
+							</a>
+						</li>
+					
+				
+				
+							
+			</ul>
+			
+			<div class="footMenu">
+				<ul>
+					<li class=""><a href="List9e24.html?cid1=A"><span>COFFEE</span></a></li>
+					<li class=""><a href="Listb034.html?cid1=B"><span>BEVERAGE</span></a></li>
+					<li class=""><a href="List245b.html?cid1=D"><span>FOOD</span></a></li>
+					<li class=""><a href="Listcaa1.html?cid1=C"><span>ICE-CREAM</span></a></li>
+					<li class="on"><a href="List725a.html?cid1=E"><span>PRODUCT</span></a></li>
+				</ul><!-- 해당메뉴일때 class="on" -->
+			</div>		
+		</div>
+		<!-- //menuList -->
+		<!-- //내용영역 -->
+	</div>
+	
+	    
+
+		     
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148615730-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148615730-1');
+</script>
+<div id="footerWrap">
+	<ul class="footerMenu">
+		<li><a href="../footer/Privacy.html">개인정보처리방침</a></li>
+		<li><a href="../contactus/Suggest.html">신규입점안내</a></li>
+		<li><a href="../footer/Service.html">이용약관</a></li>
+		<li><a href="../footer/Society.html">소사이어티카드 이용약관</a></li>
+		<li><a href="../footer/GiftCardAgree.html">기프트카드 이용약관</a></li>
+		<li><a href="../contactus/Faq.html">FAQ</a></li> 
+		<li><a href="../footer/siteMap.html">사이트맵</a></li> 
+	</ul>
+	<div class="address">엠즈씨드(주) 대표이사 : 김용철  주소 : 서울특별시 강남구 도산대로 75길 22 (청담동)<br>사업자등록번호 211-88-95935  대표번호 1899-8829  개인정보관리책임자 : 정보문
+		<span class="copyright">© 2019 m’s seed Co., Ltd. All rights reserved.</span>
+	</div>
+	<div class="footSnsWrap">
+		<ul>
+			<li><img src="../images/common/footer01.png" alt="ccm"></li>
+			<li><img src="../images/common/footer02.png" alt="2017년 제 19회 대한민국 브랜드 대상 산업정책 연구원이사장상"></li>
+		</ul>
+		<div class="footSns"><a href="https://www.facebook.com/paulbassettkorea/" target="_blank"><span>페이스북</span></a><a href="https://www.instagram.com/paulbassettkorea/" target="_blank"><span>인스타그램</span></a></div>
+		
+	</div>
+</div>
+
+ 
+	<form name="moveFrm" method="get">
+		<input type="hidden" name="cid1" value="E">
+		<input type="hidden" name="cid2" value="">		
+		<input type="hidden" name="dpid" value="">
+	</form>
+</div>
+</body>
+
+<!-- Mirrored from www.baristapaulbassett.co.kr/menu/List.pb?cid1=E by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Dec 2021 07:17:14 GMT -->
+</html>

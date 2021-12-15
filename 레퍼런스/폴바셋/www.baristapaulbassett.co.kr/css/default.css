@@ -1,0 +1,41 @@
+@CHARSET "utf-8";
+
+html, body	{ margin:0;padding:0;}
+form, input, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd { margin:0;padding:0; }
+ul, ol, li	{ list-style:none; }
+img		{ border:0;vertical-align:top}
+table	{ border-collapse:collapse;border-spacing:0 !important; } 
+th, td	{ padding:0;}
+textarea	{ padding:0;margin:0;}
+fieldset	{ display:block;border:none;padding:0;margin:0}
+legend, caption	 { width:0;height:0;padding:0;margin:0;font-size:0;line-height:0;}
+.fl			{ float:left !important; }
+.fr			{ float:right !important; }
+.cb		{ clear:both !important; }
+.ac		{ text-align:center !important; }
+.al			{ text-align:left !important; }
+.ar		{ text-align:right !important; }
+.vt		{ vertical-align:top !important; }
+.vm		{ vertical-align:middle !important; }
+.vb		{ vertical-align:bottom !important; }
+.oh		{ overflow:hidden !important; }
+.cp		{ cursor:pointer !important; }
+.di			{ display:inline !important; }
+.dib		{ display:inline-block;display:-moz-inline-box; }
+.dn		{ display:none !important; }
+.db		{ display:block !important; }
+.vv		{ visibility:visible !important; }
+.vh		{ visibility:hidden !important; }
+.bbn, .bbn th, .bbn td		{ border-bottom:none !important; }
+.brn	 	{ border-right:none !important; }
+.bln	 	{ border-left:none !important; }
+.bn, .bn td, .bn th		{ border:none !important; }
+.bgn, .bgn td, .bgn th 	{ background:none !important; } 
+.fb		{ font-family:'nsb' !important; }
+.fn		{ font-family:'ns'; font-weight:normal !important; }
+.fs			{ font-size:12px !important; }
+.fixed	{ table-layout:fixed; }
+.pr		{ position:relative; }
+
+.clearfix {*zoom:1;}
+.clearfix:after {content:""; display:block; clear:both;}

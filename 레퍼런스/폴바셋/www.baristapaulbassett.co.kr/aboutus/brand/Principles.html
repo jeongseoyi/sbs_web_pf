@@ -1,0 +1,440 @@
+
+   
+
+
+<!DOCTYPE HTML> 
+<html>
+
+<!-- Mirrored from www.baristapaulbassett.co.kr/aboutus/brand/Principles.pb by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Dec 2021 07:19:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   
+
+
+ 
+
+
+	
+
+	 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" type="image/x-icon" sizes="32x32" href="../../images/common/favicon_32.png" />
+<link rel="icon" type="image/x-icon" sizes="196x196" href="../../images/common/favicon_196.png" />
+<link rel="apple-touch-icon-precomposed" sizes="32x32"  href="../../images/common/favicon_32.png">
+<link rel="apple-touch-icon-precomposed" sizes="196x196" href="../../images/common/favicon_196.png"> 
+
+ 
+<title> Brand Principles | PaulBassett</title>
+
+<link rel="stylesheet" href="../../css/fontsc692.css?time=1639552547727" type="text/css" media="all" /> 
+<link rel="stylesheet" href="../../css/commonc692.css?time=1639552547727" type="text/css" media="all" />
+<link rel="stylesheet" href="../../css/layoutc692.css?time=1639552547727" type="text/css" media="all" />
+<link rel="stylesheet" href="../../css/swiperc692.css?time=1639552547727" type="text/css" media="all" /> 
+<link rel="stylesheet" href="../../css/slickc692.css?time=1639552547727" type="text/css" media="all" />
+<link rel="stylesheet" href="../../css/animatec692.css?time=1639552547727" type="text/css" media="all" />
+<link rel="stylesheet" href="../../css/contentc692.css?time=1639552547727" type="text/css" media="all" />
+<script src="../../js/jquery-3.1.1.min.js"></script>
+<script src="../../js/imagesloaded.pkgd.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/uic692.js?time=1639552547727"></script>
+<script src="../../js/jquery.mousewheel.js"></script>
+<script src="../../js/swiper.min.js"></script>
+<script src="../../js/slick.js"></script>
+
+<script>
+function _jssoCompleted(data, code){
+	if (data != "") {
+		 $.ajax({
+			url : "/member/loginSSO.pb",
+			data: {"data":data},
+			type: "POST",
+			dataType : "json",
+			async: false,
+			success : function(data) {
+				var url = location.href;
+				if (data.succeed) {
+					window.location.reload(true);
+				}else{
+				}
+			}
+		});
+	}
+}
+</script>	
+
+<script type="text/javascript" src="https://sso.maeildo.com:3443/findCookie.jsp?j_sso_q=Kg%2FK2%2Fcpm6iHBheT88eiyvhW7x%2BVgtbo5Jq%2B446s6Q2wEV491dYchS2sr7nqvNa8dzYdJQtJ2HqApk9drGUiuXQ2S0F6dG1RclhqalpjdEVoN0c0K1Jmcnp6eitkUnlHQ25jVnlmU2d2elU9"></script>
+
+	 
+<script>
+$(function() {	
+	 var swiper = new Swiper('.swiper-container', {
+		
+		loop:true,
+		pagination: {
+			el: '.swiper-pagination',
+	        type: 'progressbar',
+		},
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+		},
+		  
+		on:{
+			slideChangeTransitionEnd: function(){
+		    	var nowNum;
+		    	$(".swiper-slide-active").each(function(i){
+		    		if(i == 0){
+		    			nowNum =  $(".swiper-slide-active").index(); 	
+		    		}
+		    	})
+		    	var prevNum = nowNum - 1;
+				var nextNum = nowNum + 1;
+				console.log(nowNum)
+		    	var D_prev = $(".swiper-button-prev span"); 
+				var D_next = $(".swiper-button-next span");
+				var D_prevTxt = $(".swiper-button-prev p"); 
+				var D_nextTxt = $(".swiper-button-next p");
+				 
+				var prevNum = $(".principlesSlide .swiper-slide-prev").attr("data");
+				var nextNum = $(".principlesSlide .swiper-slide-next").attr("data");
+				var prevTxt = $(".principlesSlide .swiper-slide-prev").find(".txtBox dt").html();
+				var nextTxt = $(".principlesSlide .swiper-slide-next").find(".txtBox dt").html();
+				
+				if(nowNum <= 0){
+					prevNum = "0" + 9
+				}
+				
+				if(nowNum >= 11){
+					nextNum = "0" + 2
+				}
+				
+				D_prev.html(prevNum);
+				D_next.html(nextNum);
+				D_prevTxt.html(prevTxt);
+				D_nextTxt.html(nextTxt);
+		    },
+		  },
+	});
+
+	//버튼 클릭시 해당 슬라이드 번호
+	$('.swiper-button-next').click(function(){	
+		var nowNum =  $(".swiper-slide-active").index(); 
+		var now = $(".principlesSlide .slideCont0" + nowNum).attr("data");
+		
+		if(nowNum >= 11){
+			now = "0" + 1;
+		} 
+		
+		 $(".slideNum .nowNum").html(now);
+	})
+	
+	$('.swiper-button-prev').click(function(){ 
+		var nowNum =  $(".swiper-slide-active").index(); 
+		var now = $(".principlesSlide .slideCont0" + nowNum).attr("data");
+		
+		if(nowNum <= 0){
+			now = "1" + 0;
+		} 
+		
+		 $(".slideNum .nowNum").html(now);
+	})
+}) 
+
+</script>
+</head>
+<body>
+<div id="wrapper">
+	    
+
+		     
+
+<script>
+$(function(){
+	
+	if($("#mainWrap").length < 1){	
+		$(window).scroll(function(){
+			var scrollTop = $(this).scrollTop();
+			if(scrollTop > 0){
+				$("#headerWrap").addClass("on")
+			}else{
+				$("#headerWrap").removeClass("on")
+			}
+		});
+	}
+	$("#gnb>ul").bind("mouseenter focusin", function(){
+		$(this).parents("#headerWrap").addClass("styleB");
+		$("#gnb>ul").parent().addClass("on");
+		return false;
+	})
+	.bind("mouseleave focusout" , function(){
+		$(this).parents("#headerWrap").removeClass("styleB");
+		$("#gnb>ul").parent().removeClass("on");
+		return false;
+	});
+});
+</script>
+<div id="skipNav">
+	<a href="#container">본문 바로가기</a>
+	<a href="#gnb">메뉴 바로가기</a>
+</div>
+<div id="headerWrap">
+	<div id="header">
+		<h1><a href="../../Index.html"></a></h1>
+		<div class="back">
+			
+		</div>
+		<div id="gnb">
+			<ul>
+				<li class="subDeth"><a href="Identity.html">ABOUT US</a>
+					<ul>
+						<li><a href="Identity.html">Brand</a></li>
+						<li><a href="../intro/Ceo.html">회사소개</a></li>
+						<li><a href="../contribution/Contribution.html">CSR</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="../../menu/new/List.html">MENU</a>
+					<ul>
+						<li><a href="../../menu/new/List.html">NEW</a></li>
+						<li><a href="../../menu/List9e24.html?cid1=A">COFFEE</a></li>
+						<li><a href="../../menu/Listb034.html?cid1=B">BEVERAGE</a></li>
+						<li><a href="../../menu/Listcaa1.html?cid1=C">ICE-CREAM</a></li>
+						<li><a href="../../menu/List245b.html?cid1=D">FOOD</a></li>
+						<li><a href="../../menu/List725a.html?cid1=E">PRODUCT</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="../../store/Store.html">STORE</a>
+					<ul>
+						<li><a href="../../store/Store.html">매장찾기</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="../../society/Introduction.html">SOCIETY</a>
+					<ul>
+						<li><a href="../../society/Introduction.html">Paul Bassett Society</a></li>
+						<li><a href="../../society/Rating.html">회원 등급 혜택</a></li>
+						<li><a href="../../society/Ecard.html">e-Card 선물</a></li>
+						<li><a href="../../society/MobileApp.html">모바일 App 안내</a></li>
+						<!-- <li><a href="/society/Estamp.pb">e-Stamp 안내</a></li> -->
+						<li><a href="../../society/Partnership.html">제휴혜택 안내</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="../../whatsNews/event/List.html">WHAT'S NEW</a>
+					<ul>
+						<li><a href="../../whatsNews/event/List.html">Event / News</a></li>
+						<li><a href="../../whatsNews/class/ClassInfo.html">Coffee Class</a></li>
+						<li><a href="../../whatsNews/notice/List.html">Notice</a></li>
+					</ul>
+				</li>
+				<li class="last subDeth"><a href="../../eshop/index.html">E-SHOP</a>
+					<ul>
+						<li><a href="../../eshop/index.html">E-SHOP 소개</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<span id="gnbOverBar"></span>
+		<div class="utilWrap">
+			<ul class="util">
+			
+				
+				
+					<li><a href="../../member/Login.html">Login</a></li>
+					<li><a href="../../member/join/Certify.html">Join</a></li>				
+				
+			
+				 
+				<li><a href="../../contactus/Faq.html">Contact us</a></li>
+				<li><a href="../../contactus/recruit/process.html">Recruit</a></li>
+				<li><a href="../../contactus/Faq.html">FAQ</a></li>
+			</ul>
+			<ul class="topMenu">
+				<li><a href="../../contactus/Suggest.html">신규입점제의</a></li>
+				<li><a href="../../contactus/coffeebeans/Signature.html">납품문의</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+ 
+	<div id="container" class="aboutusWrap brandWrap">
+		<!-- 내용영역 -->
+		<div id="subVisual" class="brandVisual">
+			<h2><span class="bigTxt">BRAND</span></h2>
+		</div>
+		    
+
+		     
+
+
+<div class="tabStyleA tabStyleB">
+	<ul class="listTab">
+		<li><a href="Identity.html">Brand Identity (History)</a></li>
+		<li class="on"><a href="Principles.html">Brand Principle</a></li>
+		<li><a href="Interior.html">Interior</a></li>
+		<li><a href="PaulBassett.html">Barista Paulbassett</a></li>
+		<li><a href="Barista.html">Barista</a></li>
+	</ul>	
+</div> 
+		<!-- principlesArea -->
+		<div class="principlesArea">
+			<div class="txtArea animated fadeInUp delay04">
+				<p class="slogan"><strong>폴 바셋은 품질과 타협하지 않습니다.</strong><span class="animated fadeInUp delay06">QUALITY NEVER COMPROMISED</span></p>
+				<p class="text animated fadeInUp delay08">폴 바셋은 ‘품질과 타협하지 않는다’는 브랜드 원칙 아래  최고의 제품과 서비스를 선보이기 위해 노력하고 있습니다.<br>
+				한 잔의 완벽한 커피를 만들기 위해 Seed to Cup을 모토로 생두 선정부터 운송, 보관, 로스팅, 유통, 그리고 생산에 이르기까지<br>
+				전 과정을 철저히 관리하며, 매장의 모든 바리스타가 신선하고 좋은 품질의 원두로 좋은 커피 경험을 제공하기 위해 노력하고 있습니다.</p>
+			</div>
+			
+			<div class="slideWrap">
+				<div class="principlesSlideWrap swiper-container">
+				<div class="slideNum">
+						<span class="nowNum">01</span>
+						<span class="allNum"> / 10</span>
+					</div>
+					
+				<div class="principlesSlide swiper-wrapper">
+					<div class="slideCont01 swiper-slide" data="01.html">
+						<img src="../../images/aboutus/principlesSlide01.jpg" alt="">
+						<div class="txtBox">
+							<dl>
+								<dt>스페셜티<br>생두 셀렉션</dt>
+								<dd><span>Specialty Coffee Bean Collection</span>제 4회 월드 바리스타 챔피언십 우승자 폴 바셋은 세계 커피 산지와 농장에서 해마다 스페셜티 등급의 생두를 직접 선별합니다. 폴 바셋은 5~9월 사이에 브라질, 12~3월 사이에 에티오피아를 직접 방문하여 그 해 사용할 생두를 선택하고 독특한 배합비를 통해 시그니처 블렌드를 탄생시킵니다. 아울러 세계 각지의 최고급 싱글 오리진 스페셜티 커피도 직접 선별하여 제공합니다.</dd>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="slideCont02 swiper-slide" data="02.html">
+						<img src="../../images/aboutus/principlesSlide02.jpg" alt="">
+						<div class="txtBox">
+							<dl>
+								<dt>생두의 철저한<br>항온 항습 관리</dt>
+								<dd><span>Strict Management of Coffee Beans</span>산지에서 국내로 입고되어 운송되는 생두가 외부의 영향을 최소한으로 받을 수 있도록 철저히 관리합니다. (Grain-Pro 포장 : 외부의 나쁜 냄새를 막아주고 수분을 보호하는 역할) 국내에 입고된 생두는 온도 (15~20°C)와 습도(55~60%) 유지를 최적화한 창고에서 시스템으로 철저하게 관리합니다.</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="slideCont03 swiper-slide" data="03.html">
+						<img src="../../images/aboutus/principlesSlide03.jpg" alt="">
+						<div class="txtBox">
+							<dl>
+								<dt>국내 로스팅 및<br>철저한 생산관리<br>시스템</dt>
+								<dd><span>Rosting and Production Management System</span>Paul Bassett 국내 로스팅 팩토리에서 특유의 프로파일로 로스팅 한 후에 4~8일 이내의 신선한 원두로만 커피를 만듭니다. 로스팅한 원두는 배전 후 30분 이내 포장, 질소 충전하여 잔존 산소량을 1% 이하로 구현하는 철저한 생산관리 시스템 아래 관리되고 있습니다.</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="slideCont04 swiper-slide" data="04.html">
+						<img src="../../images/aboutus/principlesSlide04.jpg" alt="">
+						<div class="txtBox">
+							<dl>
+								<dt>원두 유통의<br>신선도 관리</dt>
+								<dd><span>Freshness Management of the Beans Distribution</span>Paul Bassett 국내 로스팅 팩토리에서 로스팅한 시그니처 블렌드와 다양한 산지의 싱글 오리진 스페셜티 커피빈들은 엄격한 품질 관리를 위해 철저히 로스팅 일자를 관리하며, 2주일 단위의 교체 주기에 따라 신선한 원두를 지속적으로 판매할 수 있도록 합니다.</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="slideCont05 swiper-slide" data="05.html">
+						<img src="../../images/aboutus/principlesSlide05.jpg" alt="">
+						<div class="txtBox">
+							<dl>
+								<dt>숙련된 전문<br>바리스타 운영</dt>
+								<dd><span>Experienced Professional Barista Operation</span>Paul Bassett 매장 직원은 모두 전문 바리스타로 월드 바리스타 챔피언 폴 바셋의 기술과 노하우를 그대로 전수 받아 커피를 추출합니다. 입사 후 약 3개월에 걸쳐 각 포지션 별 업무를 익힌 후에 숙련도에 따라 첫 커피를 추출할 수 있게 됩니다. 오랜 훈련 과정을 거친 Paul Bassett의 바리스타들은 ‘달콤한 디저트 스타일의 에스프레소’를 추출하게 됩니다.</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="slideCont06 swiper-slide" data="06.html">
+						<img src="../../images/aboutus/principlesSlide06.jpg" alt="">
+						<div class="txtBox">
+							<dl>
+								<dt>머신과 그라인더<br>이야기</dt>
+								<dd><span>Machine and Grinder Story</span>Paul Bassett에서 사용하는 에스프레소 머신과 그라인더는 좋은 원두, 전문 바리스타의 기술, 그리고 폴 바셋의 노하우가 담긴 레시피를 잘 구현하고 커피의 좋은 맛과 향의 퀄리티를 일관성있게 유지하는데 중요한 역할을 합니다. Paul Bassett이 선택한 머신 ‘La Marzocco’는 듀얼 보일러 시스템 및 프리히팅 시스템 등으로 일정한 압력을 유지하고 추출 영향 변수를 최소화 하는데 우수하며, 그라인더 Mazzer Robur는 발열이 낮아 커피 원두 본연의 향미 보존이 우수한 장비입니다.</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="slideCont07 swiper-slide" data="07.html">
+						<img src="../../images/aboutus/principlesSlide07.jpg" alt="">
+						<div class="txtBox">
+							<dl>
+								<dt>26g 원두 추출에<br>담긴 비밀</dt>
+								<dd><span>26g Secret in Coffee Bean Extraction</span>폴 바셋은 최적의 크기로 분쇄된 스폐셜티 커피 26g을 트리플 바스켓에 담아 에스프레소를 추출합니다. <br>에스프레소가 짙은 갈색에서 옅은 색으로 변화할 때 추출되는 에센스만 사용해 단맛과 신맛의 완벽한 바디 밸런스를 구현합니다.  </dd>
+							</dl>
+						</div>
+					</div>
+					<div class="slideCont08 swiper-slide" data="08.html">
+						<img src="../../images/aboutus/principlesSlide08.jpg" alt="">
+						<div class="txtBox">
+							<dl>
+								<dt>고품격 인테리어</dt>
+								<dd><span>High-Class Interior</span>바리스타 폴 바셋의 고향인 호주의 자유로운 커피빈 팩토리(Coffee Bean Factory)를 연상시키는 폴 바셋 매장은 '한잔의 커피가‘ 탄생하기까지 바리스타 폴 바셋의 고집과 열정을 담아 냈습니다.</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="slideCont09 swiper-slide" data="09.html">
+						<img src="../../images/aboutus/principlesSlide09.jpg" alt="">
+						<div class="txtBox">
+							<dl>
+								<dt>바른 커피 문화<br>전파</dt>
+								<dd><span>Spread of the Right Coffee Culture</span>원두 본연의 맛과 향에 집중한 전문화된 커피 맛을 위해 노력하는 Paul Bassett ‘한 잔의 완벽한 커피’맛을 즐길 수 있도록 원두와 추출에 관한 Coffee Class Program을 운영합니다. 뿐만 아니라 Paul Bassett 매장이 아닌 공간(사무실, 가정 등)에서도 최상의 커피 맛을 즐길 수 있도록 ‘Paul Bassett Coffee Ambassador’를 통한 ‘Coffee Quality Management Program’도 운영하고 있습니다.</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="slideCont010 swiper-slide" data="10.html">
+						<img src="../../images/aboutus/principlesSlide10.jpg" alt="">
+						<div class="txtBox">
+							<dl>
+								<dt>끊임없는 탐구와<br>노력</dt>
+								<dd><span>Constant Search and Effort</span>Paul Bassett은 원두 본연의 맛과 향에 집중한 제대로 된 커피를 만들기 위해 끊임없이 다양한 선진 사례를 탐구하며 계속적으로 노력합니다. 뿐만 아니라 해외 파트너와의 지속적인 파트너십과 커뮤니케이션을 통해 커피의 맛과 브랜드를 발전시켜 나가고 있습니다.</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-prev"><span></span><p></p></div>		
+			    <div class="swiper-button-next"><span></span><p></p></div>
+			</div> 
+			
+			</div>
+			
+		</div>
+		<!-- //principlesArea -->
+		<!-- //내용영역 -->
+	</div>
+	
+	    
+
+		     
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148615730-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148615730-1');
+</script>
+<div id="footerWrap">
+	<ul class="footerMenu">
+		<li><a href="../../footer/Privacy.html">개인정보처리방침</a></li>
+		<li><a href="../../contactus/Suggest.html">신규입점안내</a></li>
+		<li><a href="../../footer/Service.html">이용약관</a></li>
+		<li><a href="../../footer/Society.html">소사이어티카드 이용약관</a></li>
+		<li><a href="../../footer/GiftCardAgree.html">기프트카드 이용약관</a></li>
+		<li><a href="../../contactus/Faq.html">FAQ</a></li> 
+		<li><a href="../../footer/siteMap.html">사이트맵</a></li> 
+	</ul>
+	<div class="address">엠즈씨드(주) 대표이사 : 김용철  주소 : 서울특별시 강남구 도산대로 75길 22 (청담동)<br>사업자등록번호 211-88-95935  대표번호 1899-8829  개인정보관리책임자 : 정보문
+		<span class="copyright">© 2019 m’s seed Co., Ltd. All rights reserved.</span>
+	</div>
+	<div class="footSnsWrap">
+		<ul>
+			<li><img src="../../images/common/footer01.png" alt="ccm"></li>
+			<li><img src="../../images/common/footer02.png" alt="2017년 제 19회 대한민국 브랜드 대상 산업정책 연구원이사장상"></li>
+		</ul>
+		<div class="footSns"><a href="https://www.facebook.com/paulbassettkorea/" target="_blank"><span>페이스북</span></a><a href="https://www.instagram.com/paulbassettkorea/" target="_blank"><span>인스타그램</span></a></div>
+		
+	</div>
+</div>
+
+ 
+</div>
+</body>
+
+<!-- Mirrored from www.baristapaulbassett.co.kr/aboutus/brand/Principles.pb by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Dec 2021 07:19:21 GMT -->
+</html>

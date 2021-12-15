@@ -1,0 +1,736 @@
+
+
+  
+
+
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from www.baristapaulbassett.co.kr/menu/List.pb?cid1=D by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Dec 2021 07:16:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   
+
+
+ 
+
+
+	
+
+	 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" type="image/x-icon" sizes="32x32" href="../images/common/favicon_32.png" />
+<link rel="icon" type="image/x-icon" sizes="196x196" href="../images/common/favicon_196.png" />
+<link rel="apple-touch-icon-precomposed" sizes="32x32"  href="../images/common/favicon_32.png">
+<link rel="apple-touch-icon-precomposed" sizes="196x196" href="../images/common/favicon_196.png"> 
+
+ 
+<title> MENU | PaulBassett</title>
+
+<link rel="stylesheet" href="../css/fonts1418.css?time=1639552480149" type="text/css" media="all" /> 
+<link rel="stylesheet" href="../css/common1418.css?time=1639552480149" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/layout1418.css?time=1639552480149" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/swiper1418.css?time=1639552480149" type="text/css" media="all" /> 
+<link rel="stylesheet" href="../css/slick1418.css?time=1639552480149" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/animate1418.css?time=1639552480149" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/content1418.css?time=1639552480149" type="text/css" media="all" />
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/imagesloaded.pkgd.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/ui1418.js?time=1639552480149"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/slick.js"></script>
+
+<script>
+function _jssoCompleted(data, code){
+	if (data != "") {
+		 $.ajax({
+			url : "/member/loginSSO.pb",
+			data: {"data":data},
+			type: "POST",
+			dataType : "json",
+			async: false,
+			success : function(data) {
+				var url = location.href;
+				if (data.succeed) {
+					window.location.reload(true);
+				}else{
+				}
+			}
+		});
+	}
+}
+</script>	
+
+<script type="text/javascript" src="https://sso.maeildo.com:3443/findCookie.jsp?j_sso_q=BJMzzdd0ytWxtjTiDhbaKzzPw58mmQKbGH4jNgGqIwRqT0b6WYmx6kWD7%2BPQGIDsbfrI1p7e8uxYKwe%2FzN74AHdPbEl6ajFBRkxWS2wxN2l5V2ljcDZkZ1JtbXNuOXhvNVkva3FkZjN3WU09"></script>
+
+	 
+<script>
+	function goView(dpid){
+		var frm = document.moveFrm;
+		frm.action = "/menu/View.pb";
+		frm.dpid.value = dpid;
+		
+		frm.submit();
+	}
+	
+	$(function() {	    
+		$(".footMenu li:nth-child(1).on").parents(".footMenu").addClass("imgOpenWrap1");
+		$(".footMenu li:nth-child(2).on").parents(".footMenu").addClass("imgOpenWrap2");
+		$(".footMenu li:nth-child(3).on").parents(".footMenu").addClass("imgOpenWrap3");
+		$(".footMenu li:nth-child(4).on").parents(".footMenu").addClass("imgOpenWrap4");
+		$(".footMenu li:nth-child(5).on").parents(".footMenu").addClass("imgOpenWrap5");
+		
+		
+		$(".footMenu li").bind("mouseenter focusin", function(){
+			var index = $(".footMenu ul li").index(this);
+			console.log(index)
+			
+			if(index == 0){
+				$(".footMenu>ul").removeClass().addClass('imgOpen1');
+				
+			}else if(index == 1){
+				$(".footMenu>ul").removeClass().addClass('imgOpen2');
+				
+			}else if(index == 2){
+				$(".footMenu>ul").removeClass().addClass('imgOpen3');
+				
+			}
+			else if(index == 3){
+				$(".footMenu>ul").removeClass().addClass('imgOpen4');
+				
+			}
+			else if(index == 4){
+				$(".footMenu>ul").removeClass().addClass('imgOpen5');
+				
+			}
+		})
+
+		
+		.bind("mouseleave focusout" , function(){
+			$(this).parent().removeClass();
+			return false;
+		});
+		
+		
+	})
+
+</script>
+</head>
+<body>
+<div id="wrapper">
+	    
+
+		     
+
+<script>
+$(function(){
+	
+	if($("#mainWrap").length < 1){	
+		$(window).scroll(function(){
+			var scrollTop = $(this).scrollTop();
+			if(scrollTop > 0){
+				$("#headerWrap").addClass("on")
+			}else{
+				$("#headerWrap").removeClass("on")
+			}
+		});
+	}
+	$("#gnb>ul").bind("mouseenter focusin", function(){
+		$(this).parents("#headerWrap").addClass("styleB");
+		$("#gnb>ul").parent().addClass("on");
+		return false;
+	})
+	.bind("mouseleave focusout" , function(){
+		$(this).parents("#headerWrap").removeClass("styleB");
+		$("#gnb>ul").parent().removeClass("on");
+		return false;
+	});
+});
+</script>
+<div id="skipNav">
+	<a href="#container">본문 바로가기</a>
+	<a href="#gnb">메뉴 바로가기</a>
+</div>
+<div id="headerWrap">
+	<div id="header">
+		<h1><a href="../Index.html"></a></h1>
+		<div class="back">
+			
+		</div>
+		<div id="gnb">
+			<ul>
+				<li class="subDeth"><a href="../aboutus/brand/Identity.html">ABOUT US</a>
+					<ul>
+						<li><a href="../aboutus/brand/Identity.html">Brand</a></li>
+						<li><a href="../aboutus/intro/Ceo.html">회사소개</a></li>
+						<li><a href="../aboutus/contribution/Contribution.html">CSR</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="new/List.html">MENU</a>
+					<ul>
+						<li><a href="new/List.html">NEW</a></li>
+						<li><a href="List9e24.html?cid1=A">COFFEE</a></li>
+						<li><a href="Listb034.html?cid1=B">BEVERAGE</a></li>
+						<li><a href="Listcaa1.html?cid1=C">ICE-CREAM</a></li>
+						<li><a href="List245b.html?cid1=D">FOOD</a></li>
+						<li><a href="List725a.html?cid1=E">PRODUCT</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="../store/Store.html">STORE</a>
+					<ul>
+						<li><a href="../store/Store.html">매장찾기</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="../society/Introduction.html">SOCIETY</a>
+					<ul>
+						<li><a href="../society/Introduction.html">Paul Bassett Society</a></li>
+						<li><a href="../society/Rating.html">회원 등급 혜택</a></li>
+						<li><a href="../society/Ecard.html">e-Card 선물</a></li>
+						<li><a href="../society/MobileApp.html">모바일 App 안내</a></li>
+						<!-- <li><a href="/society/Estamp.pb">e-Stamp 안내</a></li> -->
+						<li><a href="../society/Partnership.html">제휴혜택 안내</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="../whatsNews/event/List.html">WHAT'S NEW</a>
+					<ul>
+						<li><a href="../whatsNews/event/List.html">Event / News</a></li>
+						<li><a href="../whatsNews/class/ClassInfo.html">Coffee Class</a></li>
+						<li><a href="../whatsNews/notice/List.html">Notice</a></li>
+					</ul>
+				</li>
+				<li class="last subDeth"><a href="../eshop/index.html">E-SHOP</a>
+					<ul>
+						<li><a href="../eshop/index.html">E-SHOP 소개</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<span id="gnbOverBar"></span>
+		<div class="utilWrap">
+			<ul class="util">
+			
+				
+				
+					<li><a href="../member/Login.html">Login</a></li>
+					<li><a href="../member/join/Certify.html">Join</a></li>				
+				
+			
+				 
+				<li><a href="../contactus/Faq.html">Contact us</a></li>
+				<li><a href="../contactus/recruit/process.html">Recruit</a></li>
+				<li><a href="../contactus/Faq.html">FAQ</a></li>
+			</ul>
+			<ul class="topMenu">
+				<li><a href="../contactus/Suggest.html">신규입점제의</a></li>
+				<li><a href="../contactus/coffeebeans/Signature.html">납품문의</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+ 
+	<div id="container" class="menuWrap">
+		<!-- 내용영역 -->
+		    
+
+		     
+
+
+	
+	
+	
+	
+		<div id="subVisual" class="foodVisual">
+			<h2><span class="bigTxt">FOOD</span><span>폴 바셋 프리미엄 푸드로 때로는 달콤함을, 때로는 든든함을 느껴보세요.</span></h2>
+		</div>	
+	
+				
+	
+	
+	
+ 
+		    
+
+		     
+<div class="tabStyleA tabStyleB">
+
+
+		
+	
+	
+			
+		<ul class="listTab food">
+			<li  class="on"><a href="List245b.html?cid1=D">전체</a></li>
+			<li class=""><a href="List78e1.html?cid1=D&amp;cid2=D">Bakery</a></li>
+			<li class=""><a href="List4770.html?cid1=D&amp;cid2=C">Morning foods</a></li>
+			<li class=""><a href="List635c.html?cid1=D&amp;cid2=A">Nata</a></li>
+			<li class=""><a href="Lista9cb.html?cid1=D&amp;cid2=B">Cake · Dessert</a></li>
+		</ul>
+	
+		
+	
+</div><!-- 해당메뉴일때 class="on" -->
+		 
+		<!-- menuList -->
+		<div class="menuList">
+			<ul class="listStyleB">
+			
+							
+					
+						<li>
+							<div class="iconArea">
+								
+								
+									<span class="newIcon">New</span>
+								
+							</div>
+							<a href="#" onclick="goView('PB271249');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202111250113418590.jpg" alt=""></div>
+								<div class="txtArea">다크 헤이즐넛 케이크(홀)<span class="sTxt">Dark Hazelnut Cake(W)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+									<span class="newIcon">New</span>
+								
+							</div>
+							<a href="#" onclick="goView('PB271248');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202111250109504530.jpg" alt=""></div>
+								<div class="txtArea">우유 크림 케이크(홀)<span class="sTxt">Milk Cream Cake(W)</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+									<span class="newIcon">New</span>
+								
+							</div>
+							<a href="#" onclick="goView('PB271039');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202111031046281490.png" alt=""></div>
+								<div class="txtArea">당근 케이크<span class="sTxt">Carrot Cake</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+									<span class="bestIcon">Best</span>
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271208');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202108240524584250.png" alt=""></div>
+								<div class="txtArea">초콜릿 크림빵<span class="sTxt">Chocolate Cream Bread</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB281204');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202103021102434840.jpg" alt=""></div>
+								<div class="txtArea">바통 쇼콜라<span class="sTxt">Bâtons de chocolat</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB281203');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202103021100567850.jpg" alt=""></div>
+								<div class="txtArea">에쉬레 버터쿠키<span class="sTxt">Échiré Butter Cookie</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270942');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_201903210638467491.jpg" alt=""></div>
+								<div class="txtArea">까눌레<span class="sTxt">Cannele</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271192');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202107140150467500.png" alt=""></div>
+								<div class="txtArea">우유크림 랑드샤<span class="sTxt">Milk Cream Langue De Chat</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271189');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202107120149264830.png" alt=""></div>
+								<div class="txtArea">제주녹차크림팥빵<span class="sTxt">Jeju Green Tea Cream Red Bean Bread</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB180587');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_2_202105211027176590.jpg" alt=""></div>
+								<div class="txtArea">플레인 마들렌<span class="sTxt">Plain Madeleine</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+									<span class="bestIcon">Best</span>
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB281237');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_2_202104271059502800.jpg" alt=""></div>
+								<div class="txtArea">우유크림 빵<span class="sTxt">Milk Cream Bread</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB281212');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_2_202103300521298510.jpg" alt=""></div>
+								<div class="txtArea">폴 바셋 커피 베이글칩<span class="sTxt">Paul Bassett Coffee Bagel Chip</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB281213');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202103300506529450.jpg" alt=""></div>
+								<div class="txtArea">폴 바셋 토마토 베이글칩<span class="sTxt">Paul Bassett Tomato Bagel Chip</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+									<span class="bestIcon">Best</span>
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB281158');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202012031125254491.png" alt=""></div>
+								<div class="txtArea">초콜릿 호두 쿠키<span class="sTxt">Chocolate Walnut Cookie</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+									<span class="bestIcon">Best</span>
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB281159');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202012031123372471.png" alt=""></div>
+								<div class="txtArea">스모어 쿠키<span class="sTxt">S&#039;more Cookie</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270888');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_201903220643342231.jpg" alt=""></div>
+								<div class="txtArea">크루아상<span class="sTxt">Croissant</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB179502');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_2_202106150317197040.png" alt=""></div>
+								<div class="txtArea">햄에그치즈머핀<span class="sTxt">Ham egg &amp; cheese muffin</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB179503');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_201904101148186730.png" alt=""></div>
+								<div class="txtArea">베이컨에그치즈머핀<span class="sTxt">Bacon egg &amp; cheese muffin</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271123');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202002250120399531.png" alt=""></div>
+								<div class="txtArea">치즈 샌드위치<span class="sTxt">Cheese Sandwich</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271120');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_2_202111041050480540.png" alt=""></div>
+								<div class="txtArea">플레인 베이글<span class="sTxt">Plain Bagel</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271121');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_2_202111041051028030.png" alt=""></div>
+								<div class="txtArea">블루베리 베이글<span class="sTxt">Blueberry Bagel</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270955');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_201906040621274180.png" alt=""></div>
+								<div class="txtArea">맛있는영양반숙란<span class="sTxt">Soft-boiled Egg</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271122');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202002250122163131.png" alt=""></div>
+								<div class="txtArea">햄n치즈 샌드위치<span class="sTxt">Ham&amp;Cheese Sandwich</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270593');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_2_202002180949248021.png" alt=""></div>
+								<div class="txtArea">나타 초콜릿<span class="sTxt">Nata Chocolate</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270682');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_2_202002180948299391.png" alt=""></div>
+								<div class="txtArea">나타 애플<span class="sTxt">Nata Apple</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB281151');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202011180323198201.png" alt=""></div>
+								<div class="txtArea">나타 마키아토<span class="sTxt">Nata Macchiato</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270595');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202002180956304111.png" alt=""></div>
+								<div class="txtArea">나타 믹스베리<span class="sTxt">Nata Mixed Berries</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+									<span class="bestIcon">Best</span>
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB270591');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_2_202002180948595421.png" alt=""></div>
+								<div class="txtArea">나타 오리지널<span class="sTxt">Nata Original</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271191');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202107120152571930.png" alt=""></div>
+								<div class="txtArea">제주녹차 가나슈 케이크<span class="sTxt">Jeju Green Tea Ganache Cake</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB271011');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_2_202108300214298560.png" alt=""></div>
+								<div class="txtArea">우유크림 롤<span class="sTxt">Milk Cream Roll</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB281228');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202104060450496170.jpg" alt=""></div>
+								<div class="txtArea">다크 헤이즐넛 케이크<span class="sTxt">Dark Hazelnut Cake</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB281209');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202103021106091050.jpg" alt=""></div>
+								<div class="txtArea">바스크 치즈케이크<span class="sTxt">Basque Cheese Cake</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB180532');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202101050456218610.jpg" alt=""></div>
+								<div class="txtArea">[제주한정] 제주오름 녹차 케이크<span class="sTxt">[Jeju Only] Jeju Oreum Green Tea Cake</span></div>	
+							</a>
+						</li>
+					
+						<li>
+							<div class="iconArea">
+								
+								
+							</div>
+							<a href="#" onclick="goView('PB281166');return false;"><!-- best제품일경우 class="best" 추가 -->
+								<div class="thum"><img class="imgVm" src="../upload/product/D/thumbnail_1_202101040637286811.png" alt=""></div>
+								<div class="txtArea">흑임자 케이크<span class="sTxt">Black Sesame Cake</span></div>	
+							</a>
+						</li>
+					
+				
+				
+							
+			</ul>
+			
+			<div class="footMenu">
+				<ul>
+					<li class=""><a href="List9e24.html?cid1=A"><span>COFFEE</span></a></li>
+					<li class=""><a href="Listb034.html?cid1=B"><span>BEVERAGE</span></a></li>
+					<li class="on"><a href="List245b.html?cid1=D"><span>FOOD</span></a></li>
+					<li class=""><a href="Listcaa1.html?cid1=C"><span>ICE-CREAM</span></a></li>
+					<li class=""><a href="List725a.html?cid1=E"><span>PRODUCT</span></a></li>
+				</ul><!-- 해당메뉴일때 class="on" -->
+			</div>		
+		</div>
+		<!-- //menuList -->
+		<!-- //내용영역 -->
+	</div>
+	
+	    
+
+		     
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148615730-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148615730-1');
+</script>
+<div id="footerWrap">
+	<ul class="footerMenu">
+		<li><a href="../footer/Privacy.html">개인정보처리방침</a></li>
+		<li><a href="../contactus/Suggest.html">신규입점안내</a></li>
+		<li><a href="../footer/Service.html">이용약관</a></li>
+		<li><a href="../footer/Society.html">소사이어티카드 이용약관</a></li>
+		<li><a href="../footer/GiftCardAgree.html">기프트카드 이용약관</a></li>
+		<li><a href="../contactus/Faq.html">FAQ</a></li> 
+		<li><a href="../footer/siteMap.html">사이트맵</a></li> 
+	</ul>
+	<div class="address">엠즈씨드(주) 대표이사 : 김용철  주소 : 서울특별시 강남구 도산대로 75길 22 (청담동)<br>사업자등록번호 211-88-95935  대표번호 1899-8829  개인정보관리책임자 : 정보문
+		<span class="copyright">© 2019 m’s seed Co., Ltd. All rights reserved.</span>
+	</div>
+	<div class="footSnsWrap">
+		<ul>
+			<li><img src="../images/common/footer01.png" alt="ccm"></li>
+			<li><img src="../images/common/footer02.png" alt="2017년 제 19회 대한민국 브랜드 대상 산업정책 연구원이사장상"></li>
+		</ul>
+		<div class="footSns"><a href="https://www.facebook.com/paulbassettkorea/" target="_blank"><span>페이스북</span></a><a href="https://www.instagram.com/paulbassettkorea/" target="_blank"><span>인스타그램</span></a></div>
+		
+	</div>
+</div>
+
+ 
+	<form name="moveFrm" method="get">
+		<input type="hidden" name="cid1" value="D">
+		<input type="hidden" name="cid2" value="">		
+		<input type="hidden" name="dpid" value="">
+	</form>
+</div>
+</body>
+
+<!-- Mirrored from www.baristapaulbassett.co.kr/menu/List.pb?cid1=D by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Dec 2021 07:16:55 GMT -->
+</html>

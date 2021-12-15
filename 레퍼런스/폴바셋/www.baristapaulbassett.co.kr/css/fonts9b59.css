@@ -1,0 +1,129 @@
+@CHARSET "UTF-8";
+/*
+	- NotoSans -
+	- Weight -
+	Thin : 100
+	Light : 300
+	Regular : 400
+	Medium : 500
+	Bold : 700
+	Black : 900
+*/
+@font-face {
+  font-family:'NotoSans';
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/NotoSans-Thin.eot);
+  src: local(※),
+  		url(../fonts/NotoSans-Thin.html) format('woff2'),
+       url(../fonts/NotoSans-Thin.woff) format('woff'),
+       url(../fonts/NotoSans-Thin.eot) format('opentype');
+}
+
+@font-face {
+  font-family:'NotoSans';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/NotoSans-Light.eot);
+  src: local(※),
+  		url(../fonts/NotoSans-Light.html) format('woff2'),
+       url(../fonts/NotoSans-Light.woff) format('woff'),
+       url(../fonts/NotoSans-Light.eot) format('opentype');
+}
+
+@font-face {
+  font-family:'NotoSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NotoSans-Regular.eot);
+  src: local(※),
+  		url(../fonts/NotoSans-Regular.html) format('woff2'),
+       url(../fonts/NotoSans-Regular.woff) format('woff'),
+       url(../fonts/NotoSans-Regular.eot) format('opentype');
+}
+
+@font-face {
+  font-family:'NotoSans';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/NotoSans-Medium.eot);
+  src: local(※),
+  		url(../fonts/NotoSans-Medium.html) format('woff2'),
+       url(../fonts/NotoSans-Medium.woff) format('woff'),
+       url(../fonts/NotoSans-Medium.eot) format('opentype');
+}
+
+@font-face {
+  font-family:'NotoSans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NotoSans-Bold.eot);
+  src: local(※),
+  		url(../fonts/NotoSans-Bold.html) format('woff2'),
+       url(../fonts/NotoSans-Bold.woff) format('woff'),
+       url(../fonts/NotoSans-Bold.eot) format('opentype');
+}
+
+@font-face {
+  font-family:'NotoSans';
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/NotoSans-Black.eot);
+  src: local(※),
+  		url(../fonts/NotoSans-Black.html) format('woff2'),
+       url(../fonts/NotoSans-Black.woff) format('woff'),
+       url(../fonts/NotoSans-Black.eot) format('opentype');
+}
+
+@font-face {
+  font-family:'RobotoL';
+  font-weight:normal;
+  font-weight: 300;
+  src: url(../fonts/Roboto-Light.eot);
+  src: local(※),
+       url(../fonts/Roboto-Light.html) format('woff2'),
+       url(../fonts/Roboto-Light.woff) format('woff'),
+       url(../fonts/Roboto-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family:'Roboto';
+  font-weight:normal;
+  font-weight: 400;
+  src: url(../font/Roboto-Regular.eot);
+  src: local(※),
+		url(../fonts/Roboto-Regular.html) format('woff2'),
+       url(../fonts/Roboto-Regular.woff) format('woff'),
+       url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family:'RobotoM';
+  font-weight:normal;
+  font-weight: 500;
+  src: url(../font/Roboto-Medium.eot);
+  src: local(※),
+       url(../fonts/Roboto-Medium.html) format('woff2'),
+       url(../fonts/Roboto-Medium.woff) format('woff'),
+       url(../fonts/Roboto-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family:'RobotoB';
+  font-weight:normal;
+  font-weight: 700;
+  src: url(../font/Roboto-Bold.eot);
+  src: local(※),
+       url(../fonts/Roboto-Bold.html) format('woff2'),
+       url(../fonts/Roboto-Bold.woff) format('woff'),
+       url(../fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+   font-family: 'NS';
+   font-style: normal;
+   font-weight: 700;
+   src: url(../fonts/NanumSquareB.html) format('woff2'),
+        url(../fonts/NanumSquareB.woff) format('woff'),
+        url(../fonts/NanumSquareB.eot);
+} 

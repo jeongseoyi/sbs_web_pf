@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.baristapaulbassett.co.kr	TRUE	/	FALSE	1999999999	JSESSIONID	6591168A152E5566A1E29394A97383C0
+www.baristapaulbassett.co.kr	TRUE	/	FALSE	1999999999	q.menu.new.url	%2Fmenu%2Fnew%2FList.pb
+www.baristapaulbassett.co.kr	TRUE	/	FALSE	1999999999	q.menu.new.query	page%3D1
+www.baristapaulbassett.co.kr	TRUE	/	FALSE	1999999999	q.whatsNews.notice.url	%2FwhatsNews%2Fnotice%2FList.pb
+www.baristapaulbassett.co.kr	TRUE	/	FALSE	1999999999	q.whatsNews.notice.query	page%3D11
+

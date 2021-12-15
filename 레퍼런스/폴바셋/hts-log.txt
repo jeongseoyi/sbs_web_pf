@@ -1,0 +1,36 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 15 Dec 2021 16:14:31 at https://www.baristapaulbassett.co.kr/Index.pb +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.baristapaulbassett.co.kr/Index.pb -O1 "C:\sbs_web_pf\sbs_web_pf\레퍼런스\폴바셋" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:18:29	Error: 	"Not Found" (404) at link https://www.baristapaulbassett.co.kr/01 (from https://www.baristapaulbassett.co.kr/Index.pb)
+16:18:32	Error: 	"Not Found" (404) at link https://www.baristapaulbassett.co.kr/02 (from https://www.baristapaulbassett.co.kr/Index.pb)
+16:19:12	Warning: 	File not parsed, looks like binary: https://www.baristapaulbassett.co.kr/fonts/NotoSans-Thin.woff2
+16:19:12	Warning: 	File not parsed, looks like binary: https://www.baristapaulbassett.co.kr/fonts/NotoSans-Light.woff2
+16:19:12	Warning: 	File not parsed, looks like binary: https://www.baristapaulbassett.co.kr/fonts/NotoSans-Regular.woff2
+16:19:12	Warning: 	File not parsed, looks like binary: https://www.baristapaulbassett.co.kr/fonts/NotoSans-Medium.woff2
+16:19:12	Warning: 	File not parsed, looks like binary: https://www.baristapaulbassett.co.kr/fonts/NotoSans-Bold.woff2
+16:19:12	Warning: 	File not parsed, looks like binary: https://www.baristapaulbassett.co.kr/fonts/NotoSans-Black.woff2
+16:19:12	Warning: 	File not parsed, looks like binary: https://www.baristapaulbassett.co.kr/fonts/Roboto-Light.woff2
+16:19:12	Warning: 	File not parsed, looks like binary: https://www.baristapaulbassett.co.kr/fonts/Roboto-Regular.woff2
+16:19:12	Warning: 	File not parsed, looks like binary: https://www.baristapaulbassett.co.kr/fonts/Roboto-Medium.woff2
+16:19:12	Warning: 	File not parsed, looks like binary: https://www.baristapaulbassett.co.kr/fonts/Roboto-Bold.woff2
+16:19:12	Warning: 	File not parsed, looks like binary: https://www.baristapaulbassett.co.kr/fonts/NanumSquareB.woff2
+16:19:12	Error: 	"Not Found" (404) at link https://www.baristapaulbassett.co.kr/images/common/logo5.png (from https://www.baristapaulbassett.co.kr/css/main.css)
+16:24:33	Error: 	"Not Found" (404) at link https://www.baristapaulbassett.co.kr/aboutus/brand/01 (from https://www.baristapaulbassett.co.kr/aboutus/brand/Principles.pb)
+16:24:33	Error: 	"Not Found" (404) at link https://www.baristapaulbassett.co.kr/aboutus/brand/02 (from https://www.baristapaulbassett.co.kr/aboutus/brand/Principles.pb)
+16:24:33	Error: 	"Not Found" (404) at link https://www.baristapaulbassett.co.kr/aboutus/brand/03 (from https://www.baristapaulbassett.co.kr/aboutus/brand/Principles.pb)
+16:24:33	Error: 	"Not Found" (404) at link https://www.baristapaulbassett.co.kr/aboutus/brand/04 (from https://www.baristapaulbassett.co.kr/aboutus/brand/Principles.pb)
+16:24:33	Error: 	"Not Found" (404) at link https://www.baristapaulbassett.co.kr/aboutus/brand/05 (from https://www.baristapaulbassett.co.kr/aboutus/brand/Principles.pb)
+16:24:33	Error: 	"Not Found" (404) at link https://www.baristapaulbassett.co.kr/aboutus/brand/06 (from https://www.baristapaulbassett.co.kr/aboutus/brand/Principles.pb)
+16:24:33	Error: 	"Not Found" (404) at link https://www.baristapaulbassett.co.kr/aboutus/brand/07 (from https://www.baristapaulbassett.co.kr/aboutus/brand/Principles.pb)
+16:24:33	Error: 	"Not Found" (404) at link https://www.baristapaulbassett.co.kr/aboutus/brand/08 (from https://www.baristapaulbassett.co.kr/aboutus/brand/Principles.pb)
+16:24:33	Error: 	"Not Found" (404) at link https://www.baristapaulbassett.co.kr/aboutus/brand/09 (from https://www.baristapaulbassett.co.kr/aboutus/brand/Principles.pb)
+16:24:33	Error: 	"Not Found" (404) at link https://www.baristapaulbassett.co.kr/aboutus/brand/10 (from https://www.baristapaulbassett.co.kr/aboutus/brand/Principles.pb)
+16:24:37	Warning: 	Retry after error -4 (No data (connection closed)) at link https://www.baristapaulbassett.co.kr/images/aboutus/promiseTit.png (from https://www.baristapaulbassett.co.kr/aboutus/contribution/Promise.pb)
+
+HTTrack Website Copier/3.49-2 mirror complete in 29 minutes 41 seconds : 5758 links scanned, 5742 files written (445712471 bytes overall) [447123529 bytes received at 251051 bytes/sec]
+(13 errors, 12 warnings, 0 messages)

@@ -1,0 +1,384 @@
+
+   
+
+
+<!DOCTYPE HTML> 
+<html>
+
+<!-- Mirrored from www.baristapaulbassett.co.kr/aboutus/brand/Interior.pb by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Dec 2021 07:19:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   
+
+
+ 
+
+
+	
+
+	 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" type="image/x-icon" sizes="32x32" href="../../images/common/favicon_32.png" />
+<link rel="icon" type="image/x-icon" sizes="196x196" href="../../images/common/favicon_196.png" />
+<link rel="apple-touch-icon-precomposed" sizes="32x32"  href="../../images/common/favicon_32.png">
+<link rel="apple-touch-icon-precomposed" sizes="196x196" href="../../images/common/favicon_196.png"> 
+
+ 
+<title> Interior | PaulBassett</title>
+
+<link rel="stylesheet" href="../../css/fontsd2a6.css?time=1639552547990" type="text/css" media="all" /> 
+<link rel="stylesheet" href="../../css/commond2a6.css?time=1639552547990" type="text/css" media="all" />
+<link rel="stylesheet" href="../../css/layoutd2a6.css?time=1639552547990" type="text/css" media="all" />
+<link rel="stylesheet" href="../../css/swiperd2a6.css?time=1639552547990" type="text/css" media="all" /> 
+<link rel="stylesheet" href="../../css/slickd2a6.css?time=1639552547990" type="text/css" media="all" />
+<link rel="stylesheet" href="../../css/animated2a6.css?time=1639552547990" type="text/css" media="all" />
+<link rel="stylesheet" href="../../css/contentd2a6.css?time=1639552547990" type="text/css" media="all" />
+<script src="../../js/jquery-3.1.1.min.js"></script>
+<script src="../../js/imagesloaded.pkgd.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/uid2a6.js?time=1639552547990"></script>
+<script src="../../js/jquery.mousewheel.js"></script>
+<script src="../../js/swiper.min.js"></script>
+<script src="../../js/slick.js"></script>
+
+<script>
+function _jssoCompleted(data, code){
+	if (data != "") {
+		 $.ajax({
+			url : "/member/loginSSO.pb",
+			data: {"data":data},
+			type: "POST",
+			dataType : "json",
+			async: false,
+			success : function(data) {
+				var url = location.href;
+				if (data.succeed) {
+					window.location.reload(true);
+				}else{
+				}
+			}
+		});
+	}
+}
+</script>	
+
+<script type="text/javascript" src="https://sso.maeildo.com:3443/findCookie.jsp?j_sso_q=odpy3ix2ZVjnTiwvM5etTAQb4SsYbhuCuhSprZtYnuaDIISFdZqn5I9%2Bwe7MnoYWE3d%2BuoeoyuuNj3zqk9RbblZLQ2xCOUc1ODlHWjBFbFNtSE1sL0dUT3JLYlJReUk0ZzMwNXBrUUNoK009"></script>
+
+	 
+<script>
+$(function() {	
+	 var swiper = new Swiper('.swiper-container', {
+		
+		loop:true,
+		pagination: {
+			el: '.swiper-pagination',
+	        type: 'progressbar',
+		},
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+		},
+		  
+		on:{
+			slideChangeTransitionEnd: function(){
+		    	var nowNum;
+		    	$(".swiper-slide-active").each(function(i){
+		    		if(i == 0){
+		    			nowNum =  $(".swiper-slide-active").index(); 	
+		    		}
+		    	})
+		    	var prevNum = nowNum - 1;
+				var nextNum = nowNum + 1;
+				console.log(nowNum)
+		    	var D_prev = $(".swiper-button-prev span"); 
+				var D_next = $(".swiper-button-next span");
+				var D_prevTxt = $(".swiper-button-prev p"); 
+				var D_nextTxt = $(".swiper-button-next p");
+				 
+				var prevNum = $(".principlesSlide .swiper-slide-prev").attr("data");
+				var nextNum = $(".principlesSlide .swiper-slide-next").attr("data");
+				var prevTxt = $(".principlesSlide .swiper-slide-prev").find(".txtBox dt").html();
+				var nextTxt = $(".principlesSlide .swiper-slide-next").find(".txtBox dt").html();
+				
+				if(nowNum <= 0){
+					prevNum = "0" + 9
+				}
+				
+				if(nowNum >= 4){
+					nextNum = "0" + 2
+				}
+				
+				D_prev.html(prevNum);
+				D_next.html(nextNum);
+				D_prevTxt.html(prevTxt);
+				D_nextTxt.html(nextTxt);
+		    },
+		  },
+	});
+
+	//버튼 클릭시 해당 슬라이드 번호
+	$('.swiper-button-next').click(function(){	
+		var nowNum =  $(".swiper-slide-active").index(); 
+		var now = $(".principlesSlide .slideCont0" + nowNum).attr("data");
+		
+		if(nowNum >= 4){
+			now = "0" + 1;
+		} 
+		
+		 $(".slideNum .nowNum").html(now);
+	})
+	
+	$('.swiper-button-prev').click(function(){ 
+		var nowNum =  $(".swiper-slide-active").index(); 
+		var now = $(".principlesSlide .slideCont0" + nowNum).attr("data");
+		
+		if(nowNum <= 0){
+			now = "1" + 0;
+		} 
+		
+		 $(".slideNum .nowNum").html(now);
+	})
+}) 
+
+</script>
+</head>
+<body>
+<div id="wrapper">
+	    
+
+		     
+
+<script>
+$(function(){
+	
+	if($("#mainWrap").length < 1){	
+		$(window).scroll(function(){
+			var scrollTop = $(this).scrollTop();
+			if(scrollTop > 0){
+				$("#headerWrap").addClass("on")
+			}else{
+				$("#headerWrap").removeClass("on")
+			}
+		});
+	}
+	$("#gnb>ul").bind("mouseenter focusin", function(){
+		$(this).parents("#headerWrap").addClass("styleB");
+		$("#gnb>ul").parent().addClass("on");
+		return false;
+	})
+	.bind("mouseleave focusout" , function(){
+		$(this).parents("#headerWrap").removeClass("styleB");
+		$("#gnb>ul").parent().removeClass("on");
+		return false;
+	});
+});
+</script>
+<div id="skipNav">
+	<a href="#container">본문 바로가기</a>
+	<a href="#gnb">메뉴 바로가기</a>
+</div>
+<div id="headerWrap">
+	<div id="header">
+		<h1><a href="../../Index.html"></a></h1>
+		<div class="back">
+			
+		</div>
+		<div id="gnb">
+			<ul>
+				<li class="subDeth"><a href="Identity.html">ABOUT US</a>
+					<ul>
+						<li><a href="Identity.html">Brand</a></li>
+						<li><a href="../intro/Ceo.html">회사소개</a></li>
+						<li><a href="../contribution/Contribution.html">CSR</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="../../menu/new/List.html">MENU</a>
+					<ul>
+						<li><a href="../../menu/new/List.html">NEW</a></li>
+						<li><a href="../../menu/List9e24.html?cid1=A">COFFEE</a></li>
+						<li><a href="../../menu/Listb034.html?cid1=B">BEVERAGE</a></li>
+						<li><a href="../../menu/Listcaa1.html?cid1=C">ICE-CREAM</a></li>
+						<li><a href="../../menu/List245b.html?cid1=D">FOOD</a></li>
+						<li><a href="../../menu/List725a.html?cid1=E">PRODUCT</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="../../store/Store.html">STORE</a>
+					<ul>
+						<li><a href="../../store/Store.html">매장찾기</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="../../society/Introduction.html">SOCIETY</a>
+					<ul>
+						<li><a href="../../society/Introduction.html">Paul Bassett Society</a></li>
+						<li><a href="../../society/Rating.html">회원 등급 혜택</a></li>
+						<li><a href="../../society/Ecard.html">e-Card 선물</a></li>
+						<li><a href="../../society/MobileApp.html">모바일 App 안내</a></li>
+						<!-- <li><a href="/society/Estamp.pb">e-Stamp 안내</a></li> -->
+						<li><a href="../../society/Partnership.html">제휴혜택 안내</a></li>
+					</ul>
+				</li>
+				<li class="subDeth"><a href="../../whatsNews/event/List.html">WHAT'S NEW</a>
+					<ul>
+						<li><a href="../../whatsNews/event/List.html">Event / News</a></li>
+						<li><a href="../../whatsNews/class/ClassInfo.html">Coffee Class</a></li>
+						<li><a href="../../whatsNews/notice/List.html">Notice</a></li>
+					</ul>
+				</li>
+				<li class="last subDeth"><a href="../../eshop/index.html">E-SHOP</a>
+					<ul>
+						<li><a href="../../eshop/index.html">E-SHOP 소개</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<span id="gnbOverBar"></span>
+		<div class="utilWrap">
+			<ul class="util">
+			
+				
+				
+					<li><a href="../../member/Login.html">Login</a></li>
+					<li><a href="../../member/join/Certify.html">Join</a></li>				
+				
+			
+				 
+				<li><a href="../../contactus/Faq.html">Contact us</a></li>
+				<li><a href="../../contactus/recruit/process.html">Recruit</a></li>
+				<li><a href="../../contactus/Faq.html">FAQ</a></li>
+			</ul>
+			<ul class="topMenu">
+				<li><a href="../../contactus/Suggest.html">신규입점제의</a></li>
+				<li><a href="../../contactus/coffeebeans/Signature.html">납품문의</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+ 
+	<div id="container" class="aboutusWrap brandWrap">
+		<!-- 내용영역 -->
+		<div id="subVisual" class="brandVisual">
+			<h2><span class="bigTxt">BRAND</span></h2>
+		</div>
+		    
+
+		     
+
+
+<div class="tabStyleA tabStyleB">
+	<ul class="listTab">
+		<li><a href="Identity.html">Brand Identity (History)</a></li>
+		<li><a href="Principles.html">Brand Principle</a></li>
+		<li class="on"><a href="Interior.html">Interior</a></li>
+		<li><a href="PaulBassett.html">Barista Paulbassett</a></li>
+		<li><a href="Barista.html">Barista</a></li>
+	</ul>	
+</div> 
+		<!-- interiorArea -->
+		<div class="interiorArea">
+			<ul class="slogan ">
+				<li class="animated fadeInUp delay04">
+					<strong>스토리</strong>
+					폴 바셋은 매장마다 각기 다른 스토리를 가지고 있습니다. 매장이 가지고 있는 스토리는 매장 한켠에 위치한 컨셉보드에서 확인할 수 있습니다. 
+				</li>
+				<li class="animated fadeInUp delay06">
+					<strong>조화</strong>
+					폴 바셋 인테리어는 주변 환경과의 조화를 최우선으로 합니다. 우리 일상에서 편안한 휴식 공간이 될 수 있도록 자연스러운 인테리어를 추구합니다.
+				</li>
+				<li class="animated fadeInUp delay08">
+					<strong>소통</strong>
+					폴 바셋 커피 바는 오픈 형태의 낮은 테이블로 디자인되어 고객들이 언제든지 전문 바리스타의 커피 제조 과정을 볼 수 있고, 바리스타와 자유롭게 소통할 수 있습니다. 
+				</li>
+			</ul>
+			<div class="slideWrap">
+				<div class="principlesSlideWrap swiper-container">
+				<div class="slideNum">
+						<span class="nowNum">01</span>
+						<span class="allNum"> / 3</span>
+					</div>
+					
+				<div class="principlesSlide swiper-wrapper">
+					<div class="slideCont01 swiper-slide" data="01.html">
+						<img src="../../images/aboutus/interiorSlide01.jpg" alt="">
+						<div class="txtBox">
+							<dl>
+								<dt>INTERIOR</dt>
+								<dd><span>일원역점</span>목재를 겹쳐 둔 듯한 카운터, 주방을 감추려는 듯 쌓아 올린 <br>장엄한 돌담, 사선으로 솟구친 폴바셋의 상징 검은 벽.<br>제각각 다른 성질의 요소들이 모여 시너지를 내 존재를 빛낸다.</dd>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="slideCont02 swiper-slide" data="02.html">
+						<img src="../../images/aboutus/interiorSlide02.jpg" alt="">
+						<div class="txtBox">
+							<dl>
+								<dt>INTERIOR</dt>
+								<dd><span>송도 트리플스트리트점</span>상쾌하고 도시적인 블루 그레이의 기둥과 이어지는 <br>존재감 있는 벽의 우드가 길게 이어진 라인을 더욱 돋보이게 하고, <br>오고 가는 사람들의 발걸음을 멈추게 하는 유리창 안을 들여다 보면 <br>정면에 인상적인 공간이 펼쳐진다.</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="slideCont03 swiper-slide" data="03.html">
+						<img src="../../images/aboutus/interiorSlide03.jpg" alt="">
+						<div class="txtBox">
+							<dl>
+								<dt>INTERIOR</dt>
+								<dd><span>제주아라DT</span>외장부터 내부에 이르기까지 따뜻하고 무게감 있는 우드의 재질과 <br>오픈된 파사드로 건물 전체가 내뿜는 새로운 브랜드의 세계관이 돋보인다. <br>세련된 조형미와 있는 그대로의 건축을 융합시켜 시너지를 일으키는 뮤지엄 라운지</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-prev"><span></span><p></p></div>		
+			    <div class="swiper-button-next"><span></span><p></p></div>
+			</div> 
+			
+			</div>
+			
+		</div>
+		<!-- //"interiorArea" -->
+		<!-- //내용영역 -->
+	</div>
+	
+	    
+
+		     
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148615730-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148615730-1');
+</script>
+<div id="footerWrap">
+	<ul class="footerMenu">
+		<li><a href="../../footer/Privacy.html">개인정보처리방침</a></li>
+		<li><a href="../../contactus/Suggest.html">신규입점안내</a></li>
+		<li><a href="../../footer/Service.html">이용약관</a></li>
+		<li><a href="../../footer/Society.html">소사이어티카드 이용약관</a></li>
+		<li><a href="../../footer/GiftCardAgree.html">기프트카드 이용약관</a></li>
+		<li><a href="../../contactus/Faq.html">FAQ</a></li> 
+		<li><a href="../../footer/siteMap.html">사이트맵</a></li> 
+	</ul>
+	<div class="address">엠즈씨드(주) 대표이사 : 김용철  주소 : 서울특별시 강남구 도산대로 75길 22 (청담동)<br>사업자등록번호 211-88-95935  대표번호 1899-8829  개인정보관리책임자 : 정보문
+		<span class="copyright">© 2019 m’s seed Co., Ltd. All rights reserved.</span>
+	</div>
+	<div class="footSnsWrap">
+		<ul>
+			<li><img src="../../images/common/footer01.png" alt="ccm"></li>
+			<li><img src="../../images/common/footer02.png" alt="2017년 제 19회 대한민국 브랜드 대상 산업정책 연구원이사장상"></li>
+		</ul>
+		<div class="footSns"><a href="https://www.facebook.com/paulbassettkorea/" target="_blank"><span>페이스북</span></a><a href="https://www.instagram.com/paulbassettkorea/" target="_blank"><span>인스타그램</span></a></div>
+		
+	</div>
+</div>
+
+ 
+</div>
+</body>
+
+<!-- Mirrored from www.baristapaulbassett.co.kr/aboutus/brand/Interior.pb by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Dec 2021 07:19:24 GMT -->
+</html>
